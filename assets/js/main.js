@@ -1,0 +1,861 @@
+// Main JavaScript for Extraordinary Portfolio
+
+// Project data
+const projectData = {
+    'ml-1': {
+        title: 'Laptop Price Prediction',
+        category: 'Machine Learning',
+        image: 'assets/img/portfolio/ml-1.png',
+        description: 'A comprehensive machine learning project that analyzes various laptop specifications and predicts their prices using regression algorithms. The model considers factors like RAM, storage, processor, brand, and other features to provide accurate price estimates.',
+        technologies: ['Python', 'Scikit-Learn', 'Pandas', 'NumPy', 'Matplotlib', 'Jupyter Notebook'],
+        client: 'Academic Project',
+        date: '2023',
+        features: [
+            'Data preprocessing and cleaning',
+            'Feature engineering and selection',
+            'Multiple regression models comparison',
+            'Hyperparameter tuning',
+            'Model evaluation and validation',
+            'Interactive visualization dashboard'
+        ],
+        links: [
+            { name: 'GitHub', url: '#' },
+            { name: 'Live Demo', url: '#' }
+        ]
+    },
+    'data-1': {
+        title: 'WhatsApp Chat Analysis',
+        category: 'Data Analysis',
+        image: 'assets/img/portfolio/data-1.png',
+        description: 'Advanced data analysis tool for WhatsApp chat exports that provides insights into messaging patterns, user activity, sentiment analysis, and communication trends. Uses regex patterns and natural language processing to extract meaningful information from chat data.',
+        technologies: ['Python', 'Regex', 'Matplotlib', 'Seaborn', 'Pandas', 'NLTK'],
+        client: 'Personal Project',
+        date: '2023',
+        features: [
+            'Message frequency analysis',
+            'User activity patterns',
+            'Word cloud generation',
+            'Sentiment analysis',
+            'Peak activity time identification',
+            'Emoji usage statistics'
+        ],
+        links: [
+            { name: 'GitHub', url: '#' },
+            { name: 'Live Demo', url: '#' }
+        ]
+    },
+    'web-1': {
+        title: 'Personal Portfolio Website',
+        category: 'Web Development',
+        image: 'assets/img/portfolio/web-1.png',
+        description: 'A modern, responsive portfolio website built with cutting-edge web technologies. Features smooth animations, dark mode support, SEO optimization, and exceptional performance. Showcases projects, skills, and professional experience in an elegant and engaging manner.',
+        technologies: ['HTML5', 'CSS3', 'JavaScript', 'Tailwind CSS', 'AOS', 'Typed.js'],
+        client: 'Personal Project',
+        date: '2024',
+        features: [
+            'Responsive design for all devices',
+            'Dark/light mode toggle',
+            'Smooth scroll animations',
+            'SEO optimization',
+            'Performance optimization',
+            'Interactive portfolio filtering'
+        ],
+        links: [
+            { name: 'GitHub', url: '#' },
+            { name: 'Live Demo', url: '#' }
+        ]
+    },
+    'graphics-1': {
+        title: 'Graphics Design Portfolio',
+        category: 'Graphic Design',
+        image: 'assets/img/portfolio/graphics-1.png',
+        description: 'A comprehensive collection of graphic design work including social media graphics, UI/UX mockups, brand identity materials, and digital illustrations. Demonstrates proficiency in modern design tools and creative visual communication.',
+        technologies: ['Canva', 'Adobe Photoshop', 'Figma', 'Illustrator', 'UI/UX Design'],
+        client: 'Various Clients',
+        date: '2023-2024',
+        features: [
+            'Social media design packages',
+            'Brand identity development',
+            'UI/UX mockups and prototypes',
+            'Digital illustrations',
+            'Marketing materials',
+            'Logo design concepts'
+        ],
+        links: [
+            { name: 'View Gallery', url: '#' },
+            { name: 'Behance', url: '#' }
+        ]
+    },
+    'ml-2': {
+        title: 'Handwritten Digit Recognition',
+        category: 'Machine Learning',
+        image: 'assets/img/portfolio/ml-2.png',
+        description: 'Deep learning project implementing Convolutional Neural Networks (CNN) to recognize handwritten digits with high accuracy. Uses the MNIST dataset and achieves state-of-the-art performance through advanced neural network architecture.',
+        technologies: ['TensorFlow', 'Keras', 'Python', 'CNN', 'NumPy', 'Matplotlib'],
+        client: 'Academic Project',
+        date: '2023',
+        features: [
+            'CNN architecture implementation',
+            'Data augmentation techniques',
+            'Model training and validation',
+            'Real-time digit prediction',
+            'Performance metrics visualization',
+            'Confusion matrix analysis'
+        ],
+        links: [
+            { name: 'GitHub', url: '#' },
+            { name: 'Live Demo', url: '#' }
+        ]
+    },
+    'ml-3': {
+        title: 'Email Spam Detector',
+        category: 'Machine Learning',
+        image: 'assets/img/portfolio/ml-3.png',
+        description: 'Natural Language Processing project that classifies emails as spam or legitimate using machine learning algorithms. Implements text preprocessing, feature extraction, and multiple classification models with high accuracy.',
+        technologies: ['Python', 'NLTK', 'Scikit-Learn', 'Pandas', 'Machine Learning', 'NLP'],
+        client: 'Academic Project',
+        date: '2023',
+        features: [
+            'Text preprocessing and tokenization',
+            'Feature extraction from email content',
+            'Multiple classification algorithms',
+            'Model performance comparison',
+            'Real-time email classification',
+            'Confusion matrix and metrics'
+        ],
+        links: [
+            { name: 'GitHub', url: '#' },
+            { name: 'Live Demo', url: '#' }
+        ]
+    },
+    'iot-hotel-1': {
+        title: 'ESP32 Waiter-Less Hotel System',
+        category: 'IoT & Robotics',
+        image: 'assets/img/portfolio/iot-hotel-system.png',
+        description: 'A fully autonomous, multi-node restaurant automation system built using three ESP32 microcontrollers communicating over the ESP-NOW wireless protocol — eliminating the need for a central server or internet connection. The system digitizes the entire food ordering and delivery workflow: customers use a Table Unit (ESP32 + 4×4 keypad + OLED display) to enter their Table ID, a security code, and their order. The order is instantly wirelessly transmitted to the Kitchen Unit (ESP32 + LCD), where staff see all orders in real time. With one button press, the kitchen relays the order to the Delivery Robot (an ESP32-powered autonomous vehicle) which navigates to the correct table and delivers the food — all without any human waiter.',
+        technologies: ['ESP32 ×3', 'ESP-NOW Protocol', 'OLED Display', 'LCD Display', '4×4 Keypad', 'L298N Motor Driver', 'DC Motors', 'C++ / Arduino IDE'],
+        client: 'Academic / Innovation Project',
+        date: '2024',
+        features: [
+            'Server-free ESP-NOW peer-to-peer mesh communication',
+            'Secure Table ID + PIN code order verification',
+            'Real-time multi-order display on kitchen LCD',
+            'One-click kitchen-to-robot order dispatching',
+            'Autonomous robot navigation to customer table',
+            'Zero internet or Wi-Fi router dependency',
+            'Scalable architecture for multiple tables',
+            'Low-cost hardware implementation under $30'
+        ],
+        links: [
+            { name: 'GitHub', url: '#' },
+            { name: 'Demo Video', url: '#' }
+        ]
+    },
+    'solar-1': {
+        title: 'AI Intelligent Dual Axis Autonomous Solar Harvesting System',
+        category: 'IoT & Robotics',
+        image: 'assets/img/portfolio/solar-harvesting.png',
+        description: 'AI-driven dual-axis solar tracker that maximizes energy harvest by autonomously aligning panels to the sun using computer vision and motor control.',
+        technologies: ['Computer Vision', 'Motor Control', 'AI', 'ESP32'],
+        client: 'Research Project',
+        date: '2024',
+        features: [
+            'Dual-axis tracking',
+            'Computer vision based sun detection',
+            'Motor control for panel alignment',
+            'Energy optimization algorithms'
+        ],
+        links: [
+            { name: 'GitHub', url: '#' },
+            { name: 'Demo Video', url: '#' }
+        ]
+    },
+    // Existing closing
+};
+
+// Register Alpine.js stores
+document.addEventListener('alpine:init', () => {
+    Alpine.store('darkMode', {
+        on: localStorage.getItem('theme') === 'dark' ||
+            (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches),
+        toggle() {
+            this.on = !this.on;
+            localStorage.setItem('theme', this.on ? 'dark' : 'light');
+            if (this.on) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        }
+    });
+
+    Alpine.store('menuOpen', {
+        on: false,
+        toggle() {
+            this.on = !this.on;
+        },
+        close() {
+            this.on = false;
+        }
+    });
+});
+
+// Initialize everything when DOM is loaded
+document.addEventListener('DOMContentLoaded', function () {
+    // Initialize AOS
+    AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100
+    });
+
+    // Initialize Typed.js
+    const typed = new Typed('#typed-text', {
+        strings: [
+            'Computer System Engineer',
+            'AI & Web Developer',
+            'STEAM/IOT/AI Educator'
+        ],
+        typeSpeed: 50,
+        backSpeed: 30,
+        backDelay: 2000,
+        loop: true,
+        showCursor: false
+    });
+
+    // Hide loader
+    setTimeout(() => {
+        const loader = document.getElementById('loader');
+        loader.classList.add('hidden');
+        setTimeout(() => loader.remove(), 500);
+    }, 1500);
+
+    // Initialize particles
+    createParticles();
+
+    // Initialize smooth scroll
+    initSmoothScroll();
+
+    // Initialize scroll effects
+    initScrollEffects();
+
+    // Initialize magnetic buttons
+    initMagneticButtons();
+
+    // Initialize parallax effects
+    initParallax();
+
+    // Initialize theme detection
+    detectTheme();
+
+    // Initialize neural network canvas background
+    initNeuralNetCanvas();
+
+    // Initialize portfolio filtering
+    initPortfolioFilter();
+
+    // Initialize contact form
+    initContactForm();
+});
+
+// ─── Neural Network Canvas Background ──────────────────────────────────────
+function initNeuralNetCanvas() {
+    const canvas = document.getElementById('neural-net-canvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+
+    // ── Config ────────────────────────────────────────────────────────────────
+    const NODE_COUNT_BASE = 90;   // scales with area
+    const MAX_DIST = 160;  // max px between connected nodes
+    const MOUSE_DIST = 200;  // mouse attract radius
+    const NODE_SPEED = 0.35;
+    const NODE_RADIUS = 2.2;
+    const PULSE_SPEED = 0.025;
+
+    let W, H, nodes, mouse = { x: -9999, y: -9999 }, animId;
+    let hue = 237;   // indigo base
+
+    // ── Theme helpers ─────────────────────────────────────────────────────────
+    const isDark = () => document.documentElement.classList.contains('dark');
+
+    function themeColors() {
+        return isDark()
+            ? { node: 'rgba(139,92,246,', line: 'rgba(99,102,241,', accent: 'rgba(168,85,247,' }
+            : { node: 'rgba(79,70,229,', line: 'rgba(99,102,241,', accent: 'rgba(139,92,246,' };
+    }
+
+    // ── Node factory ─────────────────────────────────────────────────────────
+    function makeNode() {
+        const angle = Math.random() * Math.PI * 2;
+        return {
+            x: Math.random() * W,
+            y: Math.random() * H,
+            vx: Math.cos(angle) * NODE_SPEED * (0.4 + Math.random() * 0.6),
+            vy: Math.sin(angle) * NODE_SPEED * (0.4 + Math.random() * 0.6),
+            r: NODE_RADIUS * (0.6 + Math.random() * 0.8),
+            pulse: Math.random() * Math.PI * 2,
+            layer: Math.floor(Math.random() * 3),   // 0=input, 1=hidden, 2=output
+        };
+    }
+
+    // ── Resize ────────────────────────────────────────────────────────────────
+    function resize() {
+        const dpr = window.devicePixelRatio || 1;
+        const rect = canvas.parentElement.getBoundingClientRect();
+        W = rect.width;
+        H = rect.height;
+        canvas.width = W * dpr;
+        canvas.height = H * dpr;
+        canvas.style.width = W + 'px';
+        canvas.style.height = H + 'px';
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+        const targetCount = Math.round(NODE_COUNT_BASE * (W * H) / (1440 * 900));
+        const count = Math.max(40, Math.min(targetCount, 150));
+
+        // keep existing nodes if resizing, or create fresh
+        if (!nodes) {
+            nodes = Array.from({ length: count }, makeNode);
+        } else {
+            while (nodes.length < count) nodes.push(makeNode());
+            nodes.length = count;
+        }
+    }
+
+    // ── Draw one frame ────────────────────────────────────────────────────────
+    function draw() {
+        ctx.clearRect(0, 0, W, H);
+        const col = themeColors();
+        const now = performance.now() * 0.001;
+
+        // ── Draw connections ─────────────────────────────────────────────────
+        for (let i = 0; i < nodes.length; i++) {
+            const a = nodes[i];
+
+            // mouse connection
+            const mdx = mouse.x - a.x, mdy = mouse.y - a.y;
+            const md = Math.hypot(mdx, mdy);
+            if (md < MOUSE_DIST) {
+                const alpha = (1 - md / MOUSE_DIST) * 0.7;
+                ctx.beginPath();
+                ctx.moveTo(a.x, a.y);
+                ctx.lineTo(mouse.x, mouse.y);
+                // pulsing glow line
+                const grd = ctx.createLinearGradient(a.x, a.y, mouse.x, mouse.y);
+                grd.addColorStop(0, col.accent + alpha + ')');
+                grd.addColorStop(1, col.accent + '0)');
+                ctx.strokeStyle = grd;
+                ctx.lineWidth = 1.2;
+                ctx.shadowBlur = 8;
+                ctx.shadowColor = col.accent + '0.5)';
+                ctx.stroke();
+                ctx.shadowBlur = 0;
+            }
+
+            // node-to-node connections
+            for (let j = i + 1; j < nodes.length; j++) {
+                const b = nodes[j];
+                const dx = b.x - a.x, dy = b.y - a.y;
+                const dist = Math.hypot(dx, dy);
+                if (dist >= MAX_DIST) continue;
+
+                const alpha = (1 - dist / MAX_DIST) * 0.55;
+                // give different colours to different layer combos
+                const lineCol = (a.layer !== b.layer) ? col.accent : col.line;
+
+                ctx.beginPath();
+                ctx.moveTo(a.x, a.y);
+                ctx.lineTo(b.x, b.y);
+                ctx.strokeStyle = lineCol + alpha + ')';
+                ctx.lineWidth = alpha * 1.8;
+                ctx.stroke();
+            }
+        }
+
+        // ── Draw nodes ───────────────────────────────────────────────────────
+        for (const n of nodes) {
+            n.pulse += PULSE_SPEED;
+            const pulse = 0.6 + 0.4 * Math.sin(n.pulse);
+            const radius = n.r * pulse;
+
+            // outer glow
+            const grd = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, radius * 3.5);
+            const nodeCol = n.layer === 0 ? col.node
+                : n.layer === 1 ? col.accent
+                    : col.line;
+            grd.addColorStop(0, nodeCol + (0.8 * pulse) + ')');
+            grd.addColorStop(0.5, nodeCol + (0.3 * pulse) + ')');
+            grd.addColorStop(1, nodeCol + '0)');
+            ctx.beginPath();
+            ctx.arc(n.x, n.y, radius * 3.5, 0, Math.PI * 2);
+            ctx.fillStyle = grd;
+            ctx.fill();
+
+            // solid core
+            ctx.beginPath();
+            ctx.arc(n.x, n.y, radius, 0, Math.PI * 2);
+            ctx.fillStyle = nodeCol + '1)';
+            ctx.fill();
+
+            // move
+            n.x += n.vx;
+            n.y += n.vy;
+            if (n.x < -10) n.x = W + 10;
+            if (n.x > W + 10) n.x = -10;
+            if (n.y < -10) n.y = H + 10;
+            if (n.y > H + 10) n.y = -10;
+        }
+
+        animId = requestAnimationFrame(draw);
+    }
+
+    // ── Events ────────────────────────────────────────────────────────────────
+    const section = document.getElementById('home');
+    section.addEventListener('mousemove', e => {
+        const rect = canvas.getBoundingClientRect();
+        mouse.x = e.clientX - rect.left;
+        mouse.y = e.clientY - rect.top;
+    });
+    section.addEventListener('mouseleave', () => {
+        mouse.x = -9999;
+        mouse.y = -9999;
+    });
+
+    // touch support
+    section.addEventListener('touchmove', e => {
+        if (!e.touches[0]) return;
+        const rect = canvas.getBoundingClientRect();
+        mouse.x = e.touches[0].clientX - rect.left;
+        mouse.y = e.touches[0].clientY - rect.top;
+    }, { passive: true });
+
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(resize, 150);
+    });
+
+    // Watch theme changes to recolor without restarting animation
+    const themeObserver = new MutationObserver(() => { /* colors are read live per-frame */ });
+    themeObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+
+    // ── Bootstrap ─────────────────────────────────────────────────────────────
+    resize();
+    draw();
+}
+// ─────────────────────────────────────────────────────────────────────────────
+
+// Create floating particles
+function createParticles() {
+    const particlesContainer = document.createElement('div');
+    particlesContainer.className = 'particles';
+    document.body.appendChild(particlesContainer);
+
+    for (let i = 0; i < 50; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.animationDelay = Math.random() * 15 + 's';
+        particle.style.animationDuration = (15 + Math.random() * 10) + 's';
+        particlesContainer.appendChild(particle);
+    }
+}
+
+// Smooth scroll for navigation links
+function initSmoothScroll() {
+    const navLinks = document.querySelectorAll('a[href^="#"]');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                const offsetTop = targetElement.offsetTop - 80;
+
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+
+                // Update active nav link
+                navLinks.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+
+                // Close mobile menu if open
+                if (window.Alpine && Alpine.store('menuOpen')) {
+                    Alpine.store('menuOpen').close();
+                }
+            }
+        });
+    });
+}
+
+// Scroll effects
+function initScrollEffects() {
+    const navbar = document.querySelector('nav');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+
+        // Navbar background on scroll
+        if (currentScroll > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+
+        // Hide/show navbar on scroll
+        if (currentScroll > lastScroll && currentScroll > 100) {
+            navbar.style.transform = 'translateY(-100%)';
+        } else {
+            navbar.style.transform = 'translateY(0)';
+        }
+
+        lastScroll = currentScroll;
+
+        // Update active nav link based on scroll position
+        updateActiveNavLink();
+    });
+}
+
+// Update active navigation link
+function updateActiveNavLink() {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('a[href^="#"]');
+
+    let current = '';
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (window.pageYOffset >= (sectionTop - 200)) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+            link.classList.add('active');
+        }
+    });
+}
+
+// Magnetic button effect
+function initMagneticButtons() {
+    const buttons = document.querySelectorAll('.magnetic-btn');
+
+    buttons.forEach(button => {
+        button.addEventListener('mousemove', (e) => {
+            const rect = button.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+
+            button.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+        });
+
+        button.addEventListener('mouseleave', () => {
+            button.style.transform = 'translate(0, 0)';
+        });
+    });
+}
+
+// Parallax effects
+function initParallax() {
+    const parallaxElements = document.querySelectorAll('.parallax');
+
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+
+        parallaxElements.forEach(element => {
+            const speed = element.dataset.speed || 0.5;
+            element.style.transform = `translateY(${scrolled * speed}px)`;
+        });
+    });
+}
+
+// Detect system theme preference
+function detectTheme() {
+    // Theme detection and application is handled by the Alpine.js 'darkMode' store.
+}
+
+// Portfolio filtering
+function initPortfolioFilter() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const filter = button.dataset.filter;
+
+            // Update active button
+            filterButtons.forEach(btn => {
+                btn.classList.remove('active', 'bg-gradient-to-r', 'from-indigo-600', 'to-purple-600', 'text-white');
+                btn.classList.add('bg-gray-200', 'dark:bg-gray-700', 'text-gray-700', 'dark:text-gray-300');
+            });
+            button.classList.remove('bg-gray-200', 'dark:bg-gray-700', 'text-gray-700', 'dark:text-gray-300');
+            button.classList.add('active', 'bg-gradient-to-r', 'from-indigo-600', 'to-purple-600', 'text-white');
+
+            // Filter items
+            portfolioItems.forEach(item => {
+                if (filter === 'all' || item.dataset.category === filter) {
+                    item.style.display = 'block';
+                    setTimeout(() => item.classList.add('show'), 10);
+                } else {
+                    item.classList.remove('show');
+                    setTimeout(() => item.style.display = 'none', 300);
+                }
+            });
+        });
+    });
+}
+
+// Contact form handling
+function initContactForm() {
+    const form = document.getElementById('contact-form');
+
+    if (form) {
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Get form data
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData);
+
+            // Show loading state
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+
+            // Simulate form submission
+            setTimeout(() => {
+                // Show success message
+                showNotification('Message sent successfully!', 'success');
+
+                // Reset form
+                form.reset();
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
+        });
+    }
+}
+
+// Project modal functions
+function openProjectModal(projectId) {
+    const project = projectData[projectId];
+    if (!project) return;
+
+    const modal = document.getElementById('projectModal');
+    const modalBody = document.getElementById('modalBody');
+    const modalContent = document.getElementById('modalContent');
+
+    // Generate modal content
+    modalBody.innerHTML = `
+        <div class="relative">
+            <img src="${project.image}" alt="${project.title}" class="w-full h-80 object-cover rounded-t-2xl">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent rounded-t-2xl"></div>
+            <div class="absolute bottom-4 left-4 right-4 text-white">
+                <h2 class="text-3xl font-bold mb-2">${project.title}</h2>
+                <p class="text-lg opacity-90">${project.category}</p>
+            </div>
+        </div>
+        
+        <div class="p-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Project Information</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between py-2 border-b border-gray-200 dark:border-gray-700">
+                            <span class="text-gray-600 dark:text-gray-400">Category</span>
+                            <span class="font-semibold text-gray-900 dark:text-white">${project.category}</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-gray-200 dark:border-gray-700">
+                            <span class="text-gray-600 dark:text-gray-400">Client</span>
+                            <span class="font-semibold text-gray-900 dark:text-white">${project.client}</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-gray-200 dark:border-gray-700">
+                            <span class="text-gray-600 dark:text-gray-400">Project Date</span>
+                            <span class="font-semibold text-gray-900 dark:text-white">${project.date}</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Technologies Used</h3>
+                    <div class="flex flex-wrap gap-2">
+                        ${project.technologies.map(tech => `
+                            <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-sm font-semibold rounded-full">
+                                ${tech}
+                            </span>
+                        `).join('')}
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Project Description</h3>
+                <p class="text-gray-600 dark:text-gray-300 leading-relaxed">${project.description}</p>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Key Features</h3>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    ${project.features.map(feature => `
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-600 dark:text-gray-300">${feature}</span>
+                        </li>
+                    `).join('')}
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Project Links</h3>
+                <div class="flex gap-4">
+                    ${project.links.map(link => `
+                        <a href="${link.url}" class="px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                            ${link.name}
+                        </a>
+                    `).join('')}
+                </div>
+            </div>
+        </div>
+    `;
+
+    // Show modal
+    modal.classList.remove('hidden');
+    setTimeout(() => {
+        modalContent.classList.remove('scale-95', 'opacity-0');
+        modalContent.classList.add('scale-100', 'opacity-100');
+    }, 10);
+
+    // Prevent body scroll
+    document.body.style.overflow = 'hidden';
+}
+
+function closeProjectModal() {
+    const modal = document.getElementById('projectModal');
+    const modalContent = document.getElementById('modalContent');
+
+    modalContent.classList.remove('scale-100', 'opacity-100');
+    modalContent.classList.add('scale-95', 'opacity-0');
+
+    setTimeout(() => {
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+    }, 300);
+}
+
+// Notification system
+function showNotification(message, type = 'info') {
+    const notification = document.createElement('div');
+    notification.className = `fixed top-20 right-4 z-50 p-4 rounded-lg shadow-lg transform translate-x-full transition-transform duration-300 ${type === 'success' ? 'bg-green-500' :
+            type === 'error' ? 'bg-red-500' :
+                'bg-blue-500'
+        } text-white`;
+    notification.textContent = message;
+
+    document.body.appendChild(notification);
+
+    // Animate in
+    setTimeout(() => {
+        notification.style.transform = 'translateX(0)';
+    }, 100);
+
+    // Remove after 3 seconds
+    setTimeout(() => {
+        notification.style.transform = 'translateX(100%)';
+        setTimeout(() => notification.remove(), 300);
+    }, 3000);
+}
+
+// Intersection Observer for animations
+function initIntersectionObserver() {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+
+                // Stagger animation for multiple items
+                if (entry.target.classList.contains('stagger-container')) {
+                    const items = entry.target.querySelectorAll('.stagger-item');
+                    items.forEach((item, index) => {
+                        setTimeout(() => {
+                            item.classList.add('animate');
+                        }, index * 100);
+                    });
+                }
+            }
+        });
+    }, observerOptions);
+
+    // Observe elements
+    document.querySelectorAll('.stagger-item, .stagger-container').forEach(el => {
+        observer.observe(el);
+    });
+}
+
+// Skill progress animation
+function animateSkillProgress() {
+    const skillBars = document.querySelectorAll('.skill-progress');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const progress = entry.target;
+                const targetWidth = progress.dataset.progress;
+
+                progress.style.width = targetWidth + '%';
+                observer.unobserve(progress);
+            }
+        });
+    });
+
+    skillBars.forEach(bar => observer.observe(bar));
+}
+
+// Initialize all functions
+initIntersectionObserver();
+animateSkillProgress();
+
+// Scroll Progress Bar
+const scrollProgressBar = document.getElementById('scroll-progress-bar');
+function updateScrollProgress() {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    if (scrollProgressBar) scrollProgressBar.style.width = progress + '%';
+}
+
+// Performance optimization
+let ticking = false;
+function requestTick() {
+    if (!ticking) {
+        requestAnimationFrame(updateAnimations);
+        ticking = true;
+    }
+}
+
+function updateAnimations() {
+    ticking = false;
+    updateScrollProgress();
+}
+
+window.addEventListener('scroll', requestTick, { passive: true });
+window.addEventListener('resize', requestTick, { passive: true });
+
+// Make functions global for onclick handlers
+window.openProjectModal = openProjectModal;
+window.closeProjectModal = closeProjectModal;

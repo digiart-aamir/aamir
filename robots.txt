@@ -1,0 +1,18 @@
+# Robots.txt for Engr. Aamir Jamil Portfolio
+# Optimized for search engine indexing and mobile usability
+
+User-agent: *
+Allow: /
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/img/
+
+# Block system folders and dynamic JSON data to prioritize crawl budget
+Disallow: /includes/
+Disallow: /data/
+Disallow: /temp/
+Disallow: /cache/
+Disallow: /*.json$
+
+# Link to sitemap
+Sitemap: https://aamir.asbots.com/portfolio/sitemap.xml

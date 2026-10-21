@@ -1,0 +1,35 @@
+HOW TO ADD A NEW COURSERA SPECIALIZATION
+
+The portfolio website is designed to automatically detect and display new specializations you add to this directory without needing complex code changes. Just follow these simple steps:
+
+1. CREATE A NEW FOLDER
+Create a new folder in this directory (`assets/coursera specializations/`). 
+Use the naming format: `[Number]. [Specialization Title]`
+Example: `8. Full Stack Web Development`
+
+2. CREATE AN 'images' SUBFOLDER
+Inside your new folder, create a subfolder named exactly: `images`
+
+3. ADD YOUR CERTIFICATE IMAGES (.png, .jpg)
+Place all your certificate images into the `images` subfolder you just created.
+
+4. LABEL THE MAIN/FINAL CERTIFICATE
+Identify the main specialization certificate (the one that represents the entire program). You MUST include the word "Final" anywhere in its filename.
+Example: `Final Web Development Certificate.png`
+
+The website will automatically look for the word "Final" and display that image as the large main banner at the top of the card. All the other images in the folder will automatically be resized and placed in a row below it.
+
+5. ADD THE VERIFICATION LINK (Optional but Recommended)
+To make the "Verify Certificate" hover button work for your new specialization:
+- Open the file: `includes/specializations.php` in your code editor.
+- Look for the `$verifyLinks` array near the top of the file (around line 7).
+- Add a new line with your exact Specialization Title and its verification link. 
+  (Make sure the title exactly matches your folder name, ignoring the number prefix).
+  
+Example of adding it to the PHP code:
+$verifyLinks = [
+    'SCRIMBA AI Engineering' => 'https://coursera.org/verify/...',
+    'Full Stack Web Development' => 'https://coursera.org/verify/specialization/YOUR_ID_HERE'
+];
+
+Once you do this, your new specialization will instantly appear perfectly formatted on your portfolio!

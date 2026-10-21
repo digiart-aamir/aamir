@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+    <!-- Main Portfolio Page -->
+    <url>
+        <loc>https://aamir.asbots.com/portfolio/</loc>
+        <lastmod>2026-06-10T10:11:00+05:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        
+        <!-- Profile Image -->
+        <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/img/my-profile-img.png</image:loc>
+            <image:title>Engr. Aamir Jamil - Computer System Engineer</image:title>
+            <image:caption>Professional profile photo of Engr. Aamir Jamil, Computer System Engineer specializing in AI, Web Development, and STEAM/IoT/AI Education.</image:caption>
+        </image:image>
+        
+        <!-- Portfolio Projects Images -->
+        <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/ml-1.png</image:loc>
+            <image:title>Laptop Price Prediction Project</image:title>
+            <image:caption>Machine Learning project predicting laptop prices using regression algorithms.</image:caption>
+        </image:image>
+        
+        <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/data-1.png</image:loc>
+            <image:title>WhatsApp Chat Analysis Project</image:title>
+            <image:caption>Data analysis project extracting communication trends and chat insights.</image:caption>
+        </image:image>
+        
+        <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/web-1.png</image:loc>
+            <image:title>Personal Portfolio Website</image:title>
+            <image:caption>Modern responsive portfolio website built with cutting-edge web design.</image:caption>
+        </image:image>
+        
+        <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/graphics-1.png</image:loc>
+            <image:title>Graphics Design Portfolio</image:title>
+            <image:caption>Creative showcase of UI/UX layouts, branding identity, and illustrations.</image:caption>
+        </image:image>
+        
+        <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/ml-2.png</image:loc>
+            <image:title>Handwritten Digit Recognition</image:title>
+            <image:caption>Deep learning project using Convolutional Neural Networks (CNN).</image:caption>
+        </image:image>
+        
+        <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/ml-3.png</image:loc>
+            <image:title>Email Spam Detector</image:title>
+            <image:caption>NLP machine learning system for email spam classification.</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/iot-hotel-system.png</image:loc>
+            <image:title>ESP32 Waiter-Less Hotel System</image:title>
+            <image:caption>Autonomous multi-node restaurant automation utilizing ESP-NOW mesh and delivery robot.</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/solar-harvesting.png</image:loc>
+            <image:title>AI Intelligent Dual Axis Solar Tracker</image:title>
+            <image:caption>Computer vision-driven autonomous dual axis solar harvesting tracker.</image:caption>
+        </image:image>
+        
+    </url>
+
+</urlset>
