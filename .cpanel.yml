@@ -1,0 +1,24 @@
+---
+deployment:
+  tasks:
+    # Set the destination directory for deployment.
+    # Replace 'username' with your cPanel username (e.g., /home/username/public_html/ or /home/username/public_html/portfolio/)
+    - export DEPLOYPATH=/home/username/public_html/
+
+    # Ensure deployment directory exists
+    - /bin/mkdir -p $DEPLOYPATH
+
+    # Copy directories
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R includes $DEPLOYPATH
+    - /bin/cp -R .well-known $DEPLOYPATH
+
+    # Copy files (including hidden files like .htaccess)
+    - /bin/cp index.php $DEPLOYPATH
+    - /bin/cp .htaccess $DEPLOYPATH
+    - /bin/cp robots.txt $DEPLOYPATH
+    - /bin/cp sitemap.xml $DEPLOYPATH
+    - /bin/cp sw.js $DEPLOYPATH
+
+    # Optional: Alternative using rsync (uncomment if you prefer rsync synchronization)
+    # - /bin/rsync -av --delete --exclude '.git*' --exclude '.cpanel.yml' ./ $DEPLOYPATH
