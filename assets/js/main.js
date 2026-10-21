@@ -242,6 +242,12 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initialize magnetic buttons
     initMagneticButtons();
 
+    // Initialize 3D card tilt & glare
+    init3DTiltEffect();
+
+    // Initialize animated counters
+    initAnimatedCounters();
+
     // Initialize parallax effects
     initParallax();
 
@@ -560,6 +566,109 @@ function initMagneticButtons() {
         button.addEventListener('mouseleave', () => {
             button.style.transform = 'translate(0, 0)';
         });
+    });
+}
+
+// ─── 3D Card Tilt & Specular Dynamic Glare Effect ─────────────────────────────
+function init3DTiltEffect() {
+    // Only run on desktop/pointing devices to preserve smooth touch scrolling
+    if (window.matchMedia('(pointer: coarse)').matches) return;
+
+    const cards = document.querySelectorAll('.tilt-card');
+    cards.forEach(card => {
+        let bounds = null;
+        let rafId = null;
+
+        function onMouseMove(e) {
+            if (!bounds) bounds = card.getBoundingClientRect();
+
+            const mouseX = e.clientX - bounds.left;
+            const mouseY = e.clientY - bounds.top;
+
+            const xPct = Math.max(0, Math.min(100, (mouseX / bounds.width) * 100));
+            const yPct = Math.max(0, Math.min(100, (mouseY / bounds.height) * 100));
+
+            // Set specular reflection spotlight coords
+            card.style.setProperty('--mouse-x', `${xPct}%`);
+            card.style.setProperty('--mouse-y', `${yPct}%`);
+
+            // Subtle rotation angles (-8 to +8 deg)
+            const rotateX = ((mouseY / bounds.height) - 0.5) * -12;
+            const rotateY = ((mouseX / bounds.width) - 0.5) * 12;
+
+            card.style.transform = `perspective(1000px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) scale3d(1.02, 1.02, 1.02)`;
+        }
+
+        card.addEventListener('mouseenter', () => {
+            bounds = card.getBoundingClientRect();
+            card.style.transition = 'transform 0.12s ease-out, box-shadow 0.25s ease-out';
+        });
+
+        card.addEventListener('mousemove', (e) => {
+            if (rafId) cancelAnimationFrame(rafId);
+            rafId = requestAnimationFrame(() => onMouseMove(e));
+        });
+
+        card.addEventListener('mouseleave', () => {
+            if (rafId) cancelAnimationFrame(rafId);
+            bounds = null;
+            card.style.transition = 'transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.5s ease';
+            card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+            card.style.setProperty('--mouse-x', '50%');
+            card.style.setProperty('--mouse-y', '50%');
+        });
+    });
+}
+
+// ─── Stat Counter Rollup Animation ───────────────────────────────────────────
+function initAnimatedCounters() {
+    const counters = document.querySelectorAll('.stat-counter');
+    if (!counters.length) return;
+
+    function startCounter(el) {
+        if (el.dataset.animated === 'true') return;
+        el.dataset.animated = 'true';
+        const target = parseInt(el.getAttribute('data-target'), 10);
+        if (isNaN(target)) return;
+
+        const duration = 1600; // 1.6s
+        const startTime = performance.now();
+
+        function step(now) {
+            const elapsed = now - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            // easeOutExpo easing curve
+            const ease = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+            const current = Math.floor(ease * target);
+
+            el.textContent = current;
+
+            if (progress < 1) {
+                requestAnimationFrame(step);
+            } else {
+                el.textContent = target;
+            }
+        }
+
+        requestAnimationFrame(step);
+    }
+
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                startCounter(entry.target);
+                obs.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    counters.forEach(c => {
+        observer.observe(c);
+        // Trigger immediately if already visible in initial viewport
+        const rect = c.getBoundingClientRect();
+        if (rect.top >= 0 && rect.top <= (window.innerHeight || document.documentElement.clientHeight)) {
+            setTimeout(() => startCounter(c), 600);
+        }
     });
 }
 

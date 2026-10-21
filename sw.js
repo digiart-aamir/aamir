@@ -1,9 +1,9 @@
 // Portfolio Service Worker
 // Optimized for SEO and Performance
 
-const CACHE_NAME = 'portfolio-v3';
-const STATIC_CACHE = 'portfolio-static-v3';
-const DYNAMIC_CACHE = 'portfolio-dynamic-v3';
+const CACHE_NAME = 'portfolio-v5';
+const STATIC_CACHE = 'portfolio-static-v5';
+const DYNAMIC_CACHE = 'portfolio-dynamic-v5';
 
 // Files to cache immediately
 const STATIC_ASSETS = [
@@ -71,7 +71,7 @@ self.addEventListener('activate', (event) => {
     );
 });
 
-// Fetch event - serve from cache with network fallback
+// Fetch event - Network-First for navigation (HTML/PHP), Cache-First for static assets
 self.addEventListener('fetch', (event) => {
     const { request } = event;
     const url = new URL(request.url);
@@ -85,21 +85,39 @@ self.addEventListener('fetch', (event) => {
     if (url.origin !== location.origin && !isCDN(url.origin)) {
         return;
     }
+
+    // 1. Navigation requests (HTML documents like index.php): Network-First
+    if (request.mode === 'navigate' || request.destination === 'document') {
+        event.respondWith(
+            fetch(request)
+                .then((networkResponse) => {
+                    if (networkResponse.ok) {
+                        const responseClone = networkResponse.clone();
+                        caches.open(DYNAMIC_CACHE).then((cache) => {
+                            cache.put(request, responseClone);
+                        });
+                    }
+                    return networkResponse;
+                })
+                .catch(() => {
+                    return caches.match(request)
+                        .then((cached) => cached || caches.match('index.php') || getOfflineFallback(request));
+                })
+        );
+        return;
+    }
     
+    // 2. Static Assets (CSS, JS, images, fonts): Cache-First with background revalidation
     event.respondWith(
         caches.match(request)
             .then((response) => {
-                // Return cached version if available
                 if (response) {
-                    // Update cache in background
                     updateCache(request);
                     return response;
                 }
                 
-                // Otherwise fetch from network
                 return fetch(request)
                     .then((networkResponse) => {
-                        // Cache successful responses
                         if (networkResponse.ok) {
                             const responseClone = networkResponse.clone();
                             caches.open(DYNAMIC_CACHE)
@@ -110,7 +128,6 @@ self.addEventListener('fetch', (event) => {
                         return networkResponse;
                     })
                     .catch(() => {
-                        // Offline fallback for specific requests
                         return getOfflineFallback(request);
                     });
             })

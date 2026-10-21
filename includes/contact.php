@@ -99,7 +99,7 @@
                                 </div>
                             </a>
 
-                            <a href="tel:+923414579074"
+                            <a href="tel:+923414579704"
                                 class="flex items-center gap-6 p-6 rounded-2xl bg-white/60 dark:bg-gray-800/40 backdrop-blur-xl border border-white/50 dark:border-gray-700/50 shadow-md hover:shadow-xl hover:-translate-y-1 hover:border-emerald-300 dark:hover:border-emerald-500/50 transition-all duration-300 group">
                                 <div
                                     class="w-14 h-14 rounded-full bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:bg-emerald-100 dark:group-hover:bg-emerald-900/50 transition-all duration-300">
@@ -115,7 +115,7 @@
                                         WhatsApp</p>
                                     <h4
                                         class="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
-                                        +92 341 4579074</h4>
+                                        +92 341 4579704</h4>
                                 </div>
                             </a>
 
@@ -230,7 +230,7 @@
                                     </div>
 
                                     <button type="submit"
-                                        class="w-full inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold rounded-xl shadow-lg hover:shadow-indigo-500/30 transform hover:-translate-y-1 transition-all duration-300 group">
+                                        class="w-full btn-shimmer magnetic-btn inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold rounded-xl shadow-lg hover:shadow-indigo-500/30 transform hover:-translate-y-1 transition-all duration-300 group">
                                         <span>Send Message</span>
                                         <svg class="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"
                                             fill="none" stroke="currentColor" viewBox="0 0 24 24">

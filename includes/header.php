@@ -59,14 +59,14 @@
     <!-- Resource Hints -->
     <link rel="preload"
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" as="style">
-    <link rel="preload" href="assets/css/style.css?v=2" as="style">
-    <link rel="preload" href="assets/js/main.js?v=2" as="script">
+    <link rel="preload" href="assets/css/style.css?v=3" as="style">
+    <link rel="preload" href="assets/js/main.js?v=3" as="script">
 
     <!-- Enhanced SEO Meta Tags -->
     <meta name="description"
-        content="Computer System Engineer specializing in AI, Web Development, and STEAM/IOT/AI Education. 15+ projects, 500+ students taught.">
+        content="Computer System Engineer specializing in AI, AI Agents, RAG, Web Development, and STEAM/IOT/AI Education. 15+ projects, 500+ students taught.">
     <meta name="keywords"
-        content="Aamir Jamil, AI Engineer, Machine Learning, Web Developer, Data Science, Python, JavaScript, React, TensorFlow">
+        content="Aamir Jamil, AI Engineer, AI Agents, RAG, Chatbots, REST API, Machine Learning, Web Developer, Robotics, IoT, Python, JavaScript, React, FastAPI">
     <meta name="author" content="Aamir Jamil">
 
     <!-- Enhanced SEO Meta Tags -->
@@ -74,12 +74,12 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Engr. Aamir Jamil - Computer System Engineer & AI & Web Developer">
     <meta property="og:description"
-        content="Computer System Engineer specializing in AI, Web Development, and STEAM/IOT/AI Education">
+        content="Computer System Engineer specializing in AI Agents, RAG, Web Development, and STEAM/IOT/AI Education">
     <meta property="og:image" content="https://aamir.asbots.com/portfolio/assets/img/profile.jpg">
     <meta property="og:url" content="https://aamir.asbots.com/portfolio/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Engr. Aamir Jamil - Computer System Engineer">
-    <meta name="twitter:description" content="Computer System Engineer | AI & Web Developer | STEAM/IOT/AI Educator">
+    <meta name="twitter:description" content="Computer System Engineer | AI Agents & RAG | Web Developer | STEAM/IOT/AI Educator">
     <meta name="twitter:image" content="https://aamir.asbots.com/portfolio/assets/img/profile.jpg">
 
     <!-- Structured Data -->
@@ -95,7 +95,18 @@
             "https://github.com/digiart-aamir",
             "https://www.youtube.com/@engr-aamir"
         ],
-        "knowsAbout": ["Machine Learning", "AI", "Web Development", "Python", "JavaScript", "React"]
+        "knowsAbout": [
+            "AI Autonomous Agents",
+            "Retrieval-Augmented Generation (RAG)",
+            "Conversational Chatbots",
+            "LLM & REST APIs",
+            "Machine Learning",
+            "Artificial Intelligence",
+            "Robotics & IoT",
+            "Web Development",
+            "Python",
+            "React"
+        ]
     }
     </script>
 
@@ -108,11 +119,7 @@
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .portfolio-item {
-            border: 2px dashed #ff4500;
-        }
-    </style>
+
     <script>
         tailwind.config = {
             darkMode: 'class',
@@ -202,7 +209,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css?v=2">
+    <link rel="stylesheet" href="assets/css/style.css?v=3">
 
     <!-- Hide Scrollbar Styles -->
     <style>
@@ -242,7 +249,7 @@
         "url": "https://aamir.asbots.com/portfolio/",
         "image": "https://aamir.asbots.com/portfolio/assets/img/my-profile-img.png",
         "email": ["digiart.aamir@gmail.com", "chaamirjamil08@gmail.com", "aamir@asbots.com"],
-        "telephone": "+92 341 4579074",
+        "telephone": "+92 341 4579704",
         "address": {
             "@type": "PostalAddress",
             "addressLocality": "Islamabad",

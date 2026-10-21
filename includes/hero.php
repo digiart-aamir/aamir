@@ -85,73 +85,126 @@
                     <!-- CTA Buttons -->
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                         <a href="#contact"
-                            class="px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-center">
-                            Get In Touch
+                            class="magnetic-btn btn-shimmer px-7 py-3.5 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white font-semibold rounded-full shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 transform hover:scale-105 transition-all duration-300 text-center flex items-center justify-center gap-2">
+                            <span>Get In Touch</span>
+                            <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
                         </a>
                         <a href="#portfolio"
-                            class="px-6 py-3 bg-white dark:bg-gray-800 text-indigo-600 dark:text-indigo-400 font-semibold rounded-full border-2 border-indigo-600 dark:border-indigo-400 hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-center">
+                            class="magnetic-btn px-7 py-3.5 bg-white/80 dark:bg-gray-800/80 backdrop-blur-md text-indigo-600 dark:text-indigo-400 font-semibold rounded-full border border-indigo-200 dark:border-indigo-800 hover:border-indigo-500 hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-center">
                             View Portfolio
                         </a>
                     </div>
                 </div>
 
-                <!-- Right Column: Profile Image, Stats -->
-                <div class="lg:col-span-5 flex flex-col items-center justify-center space-y-6 lg:space-y-8 order-1 lg:order-2"
+                <!-- Right Column: Profile Image, Floating 3D Badges, Stats -->
+                <div class="lg:col-span-5 flex flex-col items-center justify-center space-y-8 order-1 lg:order-2"
                     data-aos="fade-left" data-aos-duration="1000">
-                    <!-- Profile Image -->
-                    <div class="relative inline-block">
-                        <div
-                            class="w-36 h-36 sm:w-44 sm:h-44 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 p-1 shadow-xl">
+
+                    <!-- Profile Image with Holographic Halo & Floating 3D Objects -->
+                    <div class="relative flex items-center justify-center p-4">
+                        <!-- Hologram Rings -->
+                        <div class="hologram-ring"></div>
+                        <div class="hologram-ring-outer hidden sm:block"></div>
+
+                        <!-- Main Profile Avatar -->
+                        <div class="relative z-10 w-40 h-40 sm:w-48 sm:h-48 rounded-full bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 p-1.5 shadow-2xl">
                             <img src="assets/img/hero%20section.png" alt="Aamir Jamil"
                                 class="w-full h-full rounded-full object-cover border-4 border-white dark:border-gray-900"
-                                loading="eager" decoding="async" width="176" height="176">
+                                loading="eager" decoding="async" width="192" height="192">
                         </div>
+
+                        <!-- Online Status Badge -->
                         <div
-                            class="absolute bottom-1 right-1 w-7 h-7 bg-green-500 rounded-full border-4 border-white dark:border-gray-900 animate-pulse flex items-center justify-center">
-                            <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7"></path>
-                            </svg>
+                            class="absolute bottom-4 right-4 z-20 w-8 h-8 bg-green-500 rounded-full border-4 border-white dark:border-gray-900 shadow-md flex items-center justify-center">
+                            <span class="w-2.5 h-2.5 rounded-full bg-white animate-ping"></span>
+                        </div>
+
+                        <!-- Floating 3D Tech Badge 1: AI & Python (Top Left) -->
+                        <div class="absolute -top-3 -left-6 z-20 animate-float-badge-1 tech-badge-glass rounded-2xl px-3.5 py-1.5 flex items-center gap-2 cursor-pointer">
+                            <span class="text-lg">🤖</span>
+                            <div class="text-left">
+                                <p class="text-[10px] font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">AI / ML</p>
+                                <p class="text-xs font-semibold text-gray-800 dark:text-gray-200">Python & PyTorch</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating 3D Tech Badge 2: Robotics & IoT (Top Right) -->
+                        <div class="absolute -top-2 -right-8 z-20 animate-float-badge-2 tech-badge-glass rounded-2xl px-3.5 py-1.5 flex items-center gap-2 cursor-pointer">
+                            <span class="text-lg">⚡</span>
+                            <div class="text-left">
+                                <p class="text-[10px] font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Hardware</p>
+                                <p class="text-xs font-semibold text-gray-800 dark:text-gray-200">IoT & Robotics</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating 3D Tech Badge 3: Web Systems (Bottom Left) -->
+                        <div class="absolute -bottom-4 -left-8 z-20 animate-float-badge-3 tech-badge-glass rounded-2xl px-3.5 py-1.5 flex items-center gap-2 cursor-pointer hidden sm:flex">
+                            <span class="text-lg">💻</span>
+                            <div class="text-left">
+                                <p class="text-[10px] font-bold uppercase tracking-wider text-cyan-600 dark:text-cyan-400">Full-Stack</p>
+                                <p class="text-xs font-semibold text-gray-800 dark:text-gray-200">Web & Systems</p>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Stats Grid (2x2) -->
+                    <!-- 3D Tilt Stats Grid (2x2) with Animated Counters -->
                     <div class="grid grid-cols-2 gap-4 w-full max-w-sm">
-                        <div
-                            class="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-2xl p-4 shadow-md border border-gray-100 dark:border-gray-700/50 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 text-center">
-                            <div
-                                class="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                                15+</div>
-                            <div
-                                class="text-xs text-gray-500 dark:text-gray-400 font-medium uppercase tracking-wider mt-1">
-                                Projects</div>
+                        <!-- Stat 1: Projects -->
+                        <div class="tilt-card bento-card rounded-2xl p-4 text-center cursor-default group overflow-hidden">
+                            <div class="card-glare"></div>
+                            <div class="tilt-inner">
+                                <div class="text-2xl sm:text-3xl font-extrabold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent stat-counter"
+                                    data-target="15" data-suffix="+">
+                                    0+
+                                </div>
+                                <div class="text-xs text-gray-500 dark:text-gray-400 font-semibold uppercase tracking-wider mt-1">
+                                    Projects Completed
+                                </div>
+                            </div>
                         </div>
-                        <div
-                            class="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-2xl p-4 shadow-md border border-gray-100 dark:border-gray-700/50 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 text-center">
-                            <div
-                                class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                                500+</div>
-                            <div
-                                class="text-xs text-gray-500 dark:text-gray-400 font-medium uppercase tracking-wider mt-1">
-                                Students</div>
+
+                        <!-- Stat 2: Students -->
+                        <div class="tilt-card bento-card rounded-2xl p-4 text-center cursor-default group overflow-hidden">
+                            <div class="card-glare"></div>
+                            <div class="tilt-inner">
+                                <div class="text-2xl sm:text-3xl font-extrabold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent stat-counter"
+                                    data-target="500" data-suffix="+">
+                                    0+
+                                </div>
+                                <div class="text-xs text-gray-500 dark:text-gray-400 font-semibold uppercase tracking-wider mt-1">
+                                    Students Mentored
+                                </div>
+                            </div>
                         </div>
-                        <div
-                            class="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-2xl p-4 shadow-md border border-gray-100 dark:border-gray-700/50 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 text-center">
-                            <div
-                                class="text-2xl font-bold bg-gradient-to-r from-pink-600 to-red-500 bg-clip-text text-transparent">
-                                3+</div>
-                            <div
-                                class="text-xs text-gray-500 dark:text-gray-400 font-medium uppercase tracking-wider mt-1">
-                                Years</div>
+
+                        <!-- Stat 3: Years -->
+                        <div class="tilt-card bento-card rounded-2xl p-4 text-center cursor-default group overflow-hidden">
+                            <div class="card-glare"></div>
+                            <div class="tilt-inner">
+                                <div class="text-2xl sm:text-3xl font-extrabold bg-gradient-to-r from-pink-600 to-rose-500 bg-clip-text text-transparent stat-counter"
+                                    data-target="3" data-suffix="+">
+                                    0+
+                                </div>
+                                <div class="text-xs text-gray-500 dark:text-gray-400 font-semibold uppercase tracking-wider mt-1">
+                                    Years Experience
+                                </div>
+                            </div>
                         </div>
-                        <div
-                            class="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-2xl p-4 shadow-md border border-gray-100 dark:border-gray-700/50 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 text-center">
-                            <div
-                                class="text-2xl font-bold bg-gradient-to-r from-green-500 to-emerald-600 bg-clip-text text-transparent">
-                                10+</div>
-                            <div
-                                class="text-xs text-gray-500 dark:text-gray-400 font-medium uppercase tracking-wider mt-1">
-                                Certificates</div>
+
+                        <!-- Stat 4: Certificates -->
+                        <div class="tilt-card bento-card rounded-2xl p-4 text-center cursor-default group overflow-hidden">
+                            <div class="card-glare"></div>
+                            <div class="tilt-inner">
+                                <div class="text-2xl sm:text-3xl font-extrabold bg-gradient-to-r from-emerald-500 to-teal-600 bg-clip-text text-transparent stat-counter"
+                                    data-target="10" data-suffix="+">
+                                    0+
+                                </div>
+                                <div class="text-xs text-gray-500 dark:text-gray-400 font-semibold uppercase tracking-wider mt-1">
+                                    Certifications
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
