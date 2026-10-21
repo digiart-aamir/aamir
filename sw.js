@@ -1,9 +1,9 @@
 // Portfolio Service Worker
 // Optimized for SEO and Performance
 
-const CACHE_NAME = 'portfolio-v2';
-const STATIC_CACHE = 'portfolio-static-v2';
-const DYNAMIC_CACHE = 'portfolio-dynamic-v2';
+const CACHE_NAME = 'portfolio-v3';
+const STATIC_CACHE = 'portfolio-static-v3';
+const DYNAMIC_CACHE = 'portfolio-dynamic-v3';
 
 // Files to cache immediately
 const STATIC_ASSETS = [
@@ -11,6 +11,7 @@ const STATIC_ASSETS = [
     'index.php',
     'assets/css/style.css',
     'assets/js/main.js',
+    'assets/img/navbar.png',
     'assets/img/my-profile-img.png',
     'assets/img/portfolio/ml-1.png',
     'assets/img/portfolio/data-1.png',
