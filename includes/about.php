@@ -67,6 +67,15 @@
                                     <span class="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">Direct Contact</span>
                                     <a href="tel:+923414579704" class="font-bold text-indigo-600 dark:text-indigo-400 text-xs sm:text-sm hover:underline">📞 +92 341 4579704</a>
                                 </div>
+                                <div class="flex items-center justify-between p-3 rounded-xl bg-gray-50/80 dark:bg-gray-800/80 border border-gray-100 dark:border-gray-700/60">
+                                    <span class="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">Kaggle Profile</span>
+                                    <a href="https://www.kaggle.com/engraamirjamil" target="_blank" rel="noopener noreferrer" class="font-bold text-[#0094d1] dark:text-[#20BEFF] text-xs sm:text-sm hover:underline flex items-center gap-1.5">
+                                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                                            <path d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.236 0-.354-.117-.354-.352V.353c0-.233.118-.353.354-.353h2.431c.234 0 .351.12.351.353v14.343l6.203-6.272c.165-.165.328-.246.494-.246h3.232c.141 0 .225.047.258.143.047.094.025.188-.07.281l-6.883 6.637 7.049 8.358c.094.094.117.188.07.281z" />
+                                        </svg>
+                                        @engraamirjamil
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -100,7 +109,7 @@
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-gray-900 dark:text-white text-base">Artificial Intelligence</h4>
-                                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Computer vision, NLP pipelines, predictive ML models, and Scikit-Learn/TensorFlow architectures.</p>
+                                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Computer vision, NLP pipelines, predictive ML models, Scikit-Learn/TensorFlow architectures, and Kaggle open datasets.</p>
                                 </div>
                             </div>
                         </div>

@@ -473,26 +473,34 @@ function initSmoothScroll() {
 
     navLinks.forEach(link => {
         link.addEventListener('click', function (e) {
-            e.preventDefault();
+            const href = this.getAttribute('href');
+            if (!href || href === '#' || !href.startsWith('#')) return;
 
-            const targetId = this.getAttribute('href').substring(1);
+            const targetId = href.substring(1);
             const targetElement = document.getElementById(targetId);
 
             if (targetElement) {
-                const offsetTop = targetElement.offsetTop - 80;
+                e.preventDefault();
+                const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset - 80;
 
                 window.scrollTo({
                     top: offsetTop,
                     behavior: 'smooth'
                 });
 
-                // Update active nav link
-                navLinks.forEach(l => l.classList.remove('active'));
-                this.classList.add('active');
+                // Update active nav link if it's a nav-link
+                if (this.classList.contains('nav-link')) {
+                    document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                    this.classList.add('active');
+                }
 
                 // Close mobile menu if open
-                if (window.Alpine && Alpine.store('menuOpen')) {
-                    Alpine.store('menuOpen').close();
+                if (window.Alpine && typeof Alpine.store === 'function') {
+                    try {
+                        Alpine.store('menuOpen', false);
+                    } catch (err) {
+                        // ignore
+                    }
                 }
             }
         });

@@ -93,6 +93,7 @@
         "sameAs": [
             "https://linkedin.com/in/engr-aamir-jamil-460b20262/",
             "https://github.com/digiart-aamir",
+            "https://www.kaggle.com/engraamirjamil",
             "https://www.youtube.com/@engr-aamir"
         ],
         "knowsAbout": [
@@ -260,6 +261,7 @@
             "https://www.instagram.com/aamirjamil.13/",
             "https://www.linkedin.com/in/engr-aamir-jamil-460b20262/",
             "https://github.com/digiart-aamir",
+            "https://www.kaggle.com/engraamirjamil",
             "https://www.youtube.com/@engr-aamir",
             "https://join.skype.com/invite/u1litbVeQ7kB"
         ],

@@ -15,6 +15,8 @@
 
     <?php include 'includes/portfolio.php'; ?>
 
+    <?php include 'includes/kaggle.php'; ?>
+
     <?php include 'includes/specializations.php'; ?>
 
     <?php include 'includes/project_modal.php'; ?>
