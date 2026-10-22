@@ -17,6 +17,8 @@
 
     <?php include 'includes/kaggle.php'; ?>
 
+    <?php include 'includes/dev_hub.php'; ?>
+
     <?php include 'includes/specializations.php'; ?>
 
     <?php include 'includes/project_modal.php'; ?>

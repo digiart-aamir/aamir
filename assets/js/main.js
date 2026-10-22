@@ -680,6 +680,8 @@ function initAnimatedCounters() {
         el.dataset.animated = 'true';
         const target = parseInt(el.getAttribute('data-target'), 10);
         if (isNaN(target)) return;
+        const suffix = el.getAttribute('data-suffix') || '';
+        const prefix = el.getAttribute('data-prefix') || '';
 
         const duration = 1600; // 1.6s
         const startTime = performance.now();
@@ -691,12 +693,12 @@ function initAnimatedCounters() {
             const ease = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
             const current = Math.floor(ease * target);
 
-            el.textContent = current;
+            el.textContent = prefix + current + suffix;
 
             if (progress < 1) {
                 requestAnimationFrame(step);
             } else {
-                el.textContent = target;
+                el.textContent = prefix + target + suffix;
             }
         }
 

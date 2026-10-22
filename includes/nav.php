@@ -36,6 +36,11 @@
                     </svg>
                     <span>Kaggle</span>
                 </a>
+                <a href="#dev-hub"
+                    class="nav-link text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors font-medium flex items-center gap-1.5">
+                    <span>Dev Hub</span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                </a>
                 <a href="#specializations"
                     class="nav-link text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors font-medium">Specializations</a>
                 <a href="#services"
@@ -86,6 +91,11 @@
                         <path d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.236 0-.354-.117-.354-.352V.353c0-.233.118-.353.354-.353h2.431c.234 0 .351.12.351.353v14.343l6.203-6.272c.165-.165.328-.246.494-.246h3.232c.141 0 .225.047.258.143.047.094.025.188-.07.281l-6.883 6.637 7.049 8.358c.094.094.117.188.07.281z" />
                     </svg>
                     <span>Kaggle Datasets</span>
+                </a>
+                <a href="#dev-hub"
+                    class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium flex items-center gap-2">
+                    <span>Dev Hub (GitHub &amp; LinkedIn)</span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
                 </a>
                 <a href="#specializations"
                     class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium">Specializations</a>

@@ -192,7 +192,7 @@
                             <div class="card-glare"></div>
                             <div class="tilt-inner">
                                 <div class="text-2xl sm:text-3xl font-extrabold bg-gradient-to-r from-pink-600 to-rose-500 bg-clip-text text-transparent stat-counter"
-                                    data-target="3" data-suffix="+">
+                                    data-target="4" data-suffix="+">
                                     0+
                                 </div>
                                 <div class="text-xs text-gray-500 dark:text-gray-400 font-semibold uppercase tracking-wider mt-1">

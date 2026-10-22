@@ -84,7 +84,7 @@
                             <!-- LinkedIn -->
                             <a href="https://www.linkedin.com/in/engr-aamir-jamil-460b20262/" target="_blank" rel="noopener noreferrer"
                                 class="w-9 h-9 rounded-xl bg-gray-900 border border-gray-800 hover:border-[#0077b5] hover:bg-[#0077b5] text-gray-400 hover:text-white flex items-center justify-center transition-all duration-200 hover:scale-110 shadow-sm"
-                                title="LinkedIn Profile">
+                                title="LinkedIn Profile (2,000+ Connections)">
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561c.1-.658.526-1.283 1.194-1.777a3.44 3.44 0 012.387-.836c2.448 0 2.901 1.608 2.901 3.771v6.256zM5.337 7.433c-1.144 0-2.063-.918-2.063-2.045 0-1.127.92-2.045 2.063-2.045 1.144 0 2.063.918 2.063 2.045 0 1.127-.92 2.045-2.063 2.045zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0H1.771z"/>
                                 </svg>
@@ -163,6 +163,12 @@
                                 <a href="#kaggle" class="text-gray-400 hover:text-cyan-400 transition-colors text-xs sm:text-sm flex items-center gap-2 group">
                                     <span class="w-1.5 h-1.5 rounded-full bg-cyan-500 group-hover:bg-cyan-300 transition-colors"></span>
                                     <span>Kaggle Hub (14 Datasets)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#dev-hub" class="text-gray-400 hover:text-indigo-400 transition-colors text-xs sm:text-sm flex items-center gap-2 group">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 group-hover:bg-indigo-300 transition-colors"></span>
+                                    <span>Dev Hub (GitHub &amp; LinkedIn)</span>
                                 </a>
                             </li>
                             <li>
@@ -316,6 +322,9 @@
 
             </div>
         </footer>
+
+        <!-- Aamir AI Chatbot Assistant (Positioned directly above WhatsApp FAB) -->
+        <?php include __DIR__ . '/chatbot.php'; ?>
 
         <!-- WhatsApp Floating Action Button (FAB) -->
         <a href="https://wa.me/923414579704?text=Hi%20Engr.%20Aamir,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect!"
