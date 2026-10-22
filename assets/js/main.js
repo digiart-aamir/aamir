@@ -65,6 +65,27 @@ const projectData = {
             { name: 'Live Demo', url: '#' }
         ]
     },
+    'web-2': {
+        title: 'ASBots — Artificial Systems & Robotics Web Platform',
+        category: 'Web Development',
+        image: 'assets/img/portfolio/asbots-platform.png',
+        description: 'Flagship enterprise web platform for ASBots (Artificial Systems & Robotics). Features high-precision automation portal architecture, Google OAuth 2.0 and credential authentication, dynamic circuit vector backgrounds, glassmorphism UI components, and real-time dashboard controls.',
+        technologies: ['PHP', 'Tailwind CSS', 'MySQL', 'JavaScript', 'Google OAuth', 'REST APIs'],
+        client: 'ASBots (asbots.com)',
+        date: '2024',
+        features: [
+            'Enterprise AI robotics web portal architecture',
+            'Google OAuth 2.0 & secure credential login flows',
+            'High-performance glassmorphism interface with Tailwind',
+            'Interactive circuit SVG animations and micro-interactions',
+            'Role-based access control and session management',
+            'Full mobile-first responsiveness and PWA readiness'
+        ],
+        links: [
+            { name: 'Live Platform ↗', url: 'https://asbots.com' },
+            { name: 'Portal Login', url: 'https://asbots.com' }
+        ]
+    },
     'graphics-1': {
         title: 'Graphics Design Portfolio',
         category: 'Graphic Design',
@@ -84,6 +105,27 @@ const projectData = {
         links: [
             { name: 'View Gallery', url: '#' },
             { name: 'Behance', url: '#' }
+        ]
+    },
+    'graphics-2': {
+        title: 'CertifAI — Design System & SVG Asset Showcase',
+        category: 'Graphic Design & Vector Motion',
+        image: 'assets/img/portfolio/certifai-showcase.png',
+        description: 'A comprehensive, production-grade vector design system and asset showcase for CertifAI (powered by asbots.com). Comprises 25 bespoke vector assets including dark/light brand wordmarks, live SMIL animated circuit shield icons with seamless trace particle motion, 512px app squircles, interactive mobile splash screen prototypes with laser choreography, and an interactive 14-theme Gradient Studio with real-time CSS/SVG export.',
+        technologies: ['SVG Vector', 'SMIL Motion', 'Brand Identity', 'UI/UX Design', 'Design Systems', 'CSS Gradients'],
+        client: 'CertifAI (asbots.com)',
+        date: '2024',
+        features: [
+            '25 scalable SVG brand assets with dark & light themes',
+            'Live SMIL animated circuit node shields with trace motion',
+            'Interactive mobile splash choreography with laser effects',
+            'Interactive Gradient Studio with 14 themes & angle tuner',
+            'iOS & Android 512×512 app squircles and mono marks',
+            'Instant 1-click CSS and SVG code copy workflows'
+        ],
+        links: [
+            { name: 'Live Showcase ↗', url: 'https://graphics-certifai.netlify.app/' },
+            { name: 'Browse Assets', url: 'https://graphics-certifai.netlify.app/#logos' }
         ]
     },
     'ml-2': {
@@ -719,7 +761,7 @@ function initPortfolioFilter() {
             // Filter items
             portfolioItems.forEach(item => {
                 if (filter === 'all' || item.dataset.category === filter) {
-                    item.style.display = 'block';
+                    item.style.display = 'flex';
                     setTimeout(() => item.classList.add('show'), 10);
                 } else {
                     item.classList.remove('show');
@@ -835,9 +877,9 @@ function openProjectModal(projectId) {
             
             <div>
                 <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Project Links</h3>
-                <div class="flex gap-4">
+                <div class="flex flex-wrap gap-4">
                     ${project.links.map(link => `
-                        <a href="${link.url}" class="px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                        <a href="${link.url}" target="_blank" rel="noopener noreferrer" class="px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300 inline-flex items-center gap-2">
                             ${link.name}
                         </a>
                     `).join('')}

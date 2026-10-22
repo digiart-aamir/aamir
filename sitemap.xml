@@ -37,9 +37,21 @@
         </image:image>
         
         <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/asbots-platform.png</image:loc>
+            <image:title>ASBots — Artificial Systems &amp; Robotics Web Platform</image:title>
+            <image:caption>Enterprise web portal for robotics automation, Google OAuth, and AI orchestration.</image:caption>
+        </image:image>
+        
+        <image:image>
             <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/graphics-1.png</image:loc>
             <image:title>Graphics Design Portfolio</image:title>
             <image:caption>Creative showcase of UI/UX layouts, branding identity, and illustrations.</image:caption>
+        </image:image>
+        
+        <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/certifai-showcase.png</image:loc>
+            <image:title>CertifAI — Design System &amp; SVG Asset Showcase</image:title>
+            <image:caption>Vector design system showcase featuring SMIL animated circuit shields, app squircles, splash prototypes, and 14 gradient themes.</image:caption>
         </image:image>
         
         <image:image>

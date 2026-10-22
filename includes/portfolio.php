@@ -58,8 +58,8 @@
                 </button>
             </div>
 
-            <!-- Balanced 4-Column Grid: 2 Clean Rows of 4 Cards (Optimized VH) -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 w-full">
+            <!-- Balanced Grid: 2 Clean Rows of 5 Cards on XL (Optimized VH for 10 Projects) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5 w-full">
 
                 <!-- 01: Laptop Price Prediction -->
                 <div class="portfolio-item group flex flex-col" data-category="ml" data-aos="fade-up" data-aos-delay="100">
@@ -190,12 +190,60 @@
                     </div>
                 </div>
 
-                <!-- 04: Graphics Design Portfolio -->
-                <div class="portfolio-item group flex flex-col" data-category="graphics" data-aos="fade-up" data-aos-delay="250">
+                <!-- 04: ASBots — Robotics & AI Web Platform (Web Development) -->
+                <div class="portfolio-item group flex flex-col" data-category="web" data-aos="fade-up" data-aos-delay="250">
+                    <div class="bento-card rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:border-cyan-500/40 transition-all duration-300 border border-gray-200/70 dark:border-gray-700/70 bg-white/90 dark:bg-gray-800/90 flex flex-col h-full group">
+                        <!-- Card Image Header -->
+                        <div class="relative h-40 overflow-hidden bg-gray-100 dark:bg-gray-900">
+                            <img src="assets/img/portfolio/asbots-platform.png" alt="ASBots — Artificial Systems & Robotics Web Platform"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter blur-md opacity-0"
+                                loading="lazy" decoding="async" width="400" height="160"
+                                onload="this.classList.remove('blur-md', 'opacity-0');">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-950/85 via-gray-950/20 to-transparent"></div>
+                            <div class="absolute top-2.5 left-2.5">
+                                <span class="px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-cyan-600 text-white shadow">
+                                    Enterprise Web
+                                </span>
+                            </div>
+                            <div class="absolute bottom-2.5 left-3 right-3 text-white">
+                                <h3 class="text-sm sm:text-base font-bold font-grotesk leading-tight truncate">ASBots Robotics Platform</h3>
+                            </div>
+                        </div>
+
+                        <!-- Card Body -->
+                        <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                            <p class="text-gray-600 dark:text-gray-300 text-xs sm:text-[13px] leading-relaxed line-clamp-2">
+                                Flagship robotics & AI web portal with Google OAuth 2.0, glassmorphism UI, and real-time automation controls.
+                            </p>
+
+                            <div class="flex flex-wrap gap-1">
+                                <span class="px-2 py-0.5 bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-300 text-[10px] font-semibold rounded border border-blue-200/60 dark:border-blue-800/40">PHP</span>
+                                <span class="px-2 py-0.5 bg-teal-50 dark:bg-teal-950/60 text-teal-600 dark:text-teal-300 text-[10px] font-semibold rounded border border-teal-200/60 dark:border-teal-800/40">Tailwind</span>
+                                <span class="px-2 py-0.5 bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-300 text-[10px] font-semibold rounded border border-indigo-200/60 dark:border-indigo-800/40">OAuth 2.0</span>
+                            </div>
+
+                            <div class="pt-2 border-t border-gray-100 dark:border-gray-700/60 flex items-center justify-between">
+                                <a href="https://asbots.com" target="_blank" rel="noopener noreferrer"
+                                    class="inline-flex items-center gap-1 text-[11px] font-bold text-cyan-600 dark:text-cyan-400 hover:underline"
+                                    title="Open live ASBots platform">
+                                    <span>Live Site</span>
+                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                                </a>
+                                <button onclick="openProjectModal('web-2')"
+                                    class="px-3.5 py-1.5 bg-gradient-to-r from-cyan-600 to-blue-600 text-white text-xs font-bold rounded-lg hover:shadow shadow-cyan-500/20 hover:scale-105 transform transition-all duration-200">
+                                    Details &rarr;
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 05: Visual & Brand Design (Graphics) -->
+                <div class="portfolio-item group flex flex-col" data-category="graphics" data-aos="fade-up" data-aos-delay="200">
                     <div class="bento-card rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:border-orange-500/40 transition-all duration-300 border border-gray-200/70 dark:border-gray-700/70 bg-white/90 dark:bg-gray-800/90 flex flex-col h-full group">
                         <!-- Card Image Header -->
                         <div class="relative h-40 overflow-hidden bg-gray-100 dark:bg-gray-900">
-                            <img src="assets/img/portfolio/graphics-1.png" alt="Graphics Design Portfolio"
+                            <img src="assets/img/portfolio/graphics-1.png" alt="Visual & Brand Design"
                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter blur-md opacity-0"
                                 loading="lazy" decoding="async" width="400" height="160"
                                 onload="this.classList.remove('blur-md', 'opacity-0');">
@@ -233,7 +281,55 @@
                     </div>
                 </div>
 
-                <!-- 05: Handwritten Digit Recognition -->
+                <!-- 06: CertifAI Design System & SVG Assets (Graphic Design) -->
+                <div class="portfolio-item group flex flex-col" data-category="graphics" data-aos="fade-up" data-aos-delay="250">
+                    <div class="bento-card rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:border-blue-500/40 transition-all duration-300 border border-gray-200/70 dark:border-gray-700/70 bg-white/90 dark:bg-gray-800/90 flex flex-col h-full group">
+                        <!-- Card Image Header -->
+                        <div class="relative h-40 overflow-hidden bg-gray-100 dark:bg-gray-900">
+                            <img src="assets/img/portfolio/certifai-showcase.png" alt="CertifAI Design System & SVG Asset Showcase"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter blur-md opacity-0"
+                                loading="lazy" decoding="async" width="400" height="160"
+                                onload="this.classList.remove('blur-md', 'opacity-0');">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-950/85 via-gray-950/20 to-transparent"></div>
+                            <div class="absolute top-2.5 left-2.5">
+                                <span class="px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-blue-600 text-white shadow">
+                                    Vector System
+                                </span>
+                            </div>
+                            <div class="absolute bottom-2.5 left-3 right-3 text-white">
+                                <h3 class="text-sm sm:text-base font-bold font-grotesk leading-tight truncate">CertifAI Design System</h3>
+                            </div>
+                        </div>
+
+                        <!-- Card Body -->
+                        <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                            <p class="text-gray-600 dark:text-gray-300 text-xs sm:text-[13px] leading-relaxed line-clamp-2">
+                                Official SVG asset showcase: 25 brand assets, SMIL animated circuit shields, app squircles, and 14-theme Gradient Studio.
+                            </p>
+
+                            <div class="flex flex-wrap gap-1">
+                                <span class="px-2 py-0.5 bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-300 text-[10px] font-semibold rounded border border-blue-200/60 dark:border-blue-800/40">SVG Vector</span>
+                                <span class="px-2 py-0.5 bg-cyan-50 dark:bg-cyan-950/60 text-cyan-600 dark:text-cyan-300 text-[10px] font-semibold rounded border border-cyan-200/60 dark:border-cyan-800/40">SMIL Motion</span>
+                                <span class="px-2 py-0.5 bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-300 text-[10px] font-semibold rounded border border-indigo-200/60 dark:border-indigo-800/40">Brand UI</span>
+                            </div>
+
+                            <div class="pt-2 border-t border-gray-100 dark:border-gray-700/60 flex items-center justify-between">
+                                <a href="https://graphics-certifai.netlify.app/" target="_blank" rel="noopener noreferrer"
+                                    class="inline-flex items-center gap-1 text-[11px] font-bold text-blue-600 dark:text-cyan-400 hover:underline"
+                                    title="Open live CertifAI Showcase">
+                                    <span>Live Site</span>
+                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                                </a>
+                                <button onclick="openProjectModal('graphics-2')"
+                                    class="px-3.5 py-1.5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-xs font-bold rounded-lg hover:shadow shadow-blue-500/20 hover:scale-105 transform transition-all duration-200">
+                                    Details &rarr;
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 07: Handwritten Digit Recognition -->
                 <div class="portfolio-item group flex flex-col" data-category="ml" data-aos="fade-up" data-aos-delay="100">
                     <div class="bento-card rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:border-cyan-500/40 transition-all duration-300 border border-gray-200/70 dark:border-gray-700/70 bg-white/90 dark:bg-gray-800/90 flex flex-col h-full group">
                         <!-- Card Image Header -->
@@ -276,7 +372,7 @@
                     </div>
                 </div>
 
-                <!-- 06: Email Spam Detector -->
+                <!-- 08: Email Spam Detector -->
                 <div class="portfolio-item group flex flex-col" data-category="ml" data-aos="fade-up" data-aos-delay="150">
                     <div class="bento-card rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 border border-gray-200/70 dark:border-gray-700/70 bg-white/90 dark:bg-gray-800/90 flex flex-col h-full group">
                         <!-- Card Image Header -->
@@ -319,7 +415,7 @@
                     </div>
                 </div>
 
-                <!-- 07: ESP32 Waiter-Less Hotel System -->
+                <!-- 09: ESP32 Waiter-Less Hotel System -->
                 <div class="portfolio-item group flex flex-col" data-category="iot" data-aos="fade-up" data-aos-delay="200">
                     <div class="bento-card rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:border-indigo-500/40 transition-all duration-300 border border-gray-200/70 dark:border-gray-700/70 bg-white/90 dark:bg-gray-800/90 flex flex-col h-full group">
                         <!-- Card Image Header -->
@@ -362,7 +458,7 @@
                     </div>
                 </div>
 
-                <!-- 08: AI Dual Axis Autonomous Solar Harvesting System -->
+                <!-- 10: AI Dual Axis Autonomous Solar Harvesting System -->
                 <div class="portfolio-item group flex flex-col" data-category="iot" data-aos="fade-up" data-aos-delay="250">
                     <div class="bento-card rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 border border-gray-200/70 dark:border-gray-700/70 bg-white/90 dark:bg-gray-800/90 flex flex-col h-full group">
                         <!-- Card Image Header -->
