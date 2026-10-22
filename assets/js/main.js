@@ -786,20 +786,50 @@ function initContactForm() {
 
             // Show loading state
             const submitBtn = form.querySelector('button[type="submit"]');
-            const originalText = submitBtn.textContent;
-            submitBtn.textContent = 'Sending...';
+            const originalHTML = submitBtn.innerHTML;
+            submitBtn.innerHTML = `
+                <svg class="w-4 h-4 animate-spin shrink-0" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                <span>Transmitting Inquiry...</span>
+            `;
             submitBtn.disabled = true;
 
-            // Simulate form submission
+            // Simulate form submission with rich feedback
             setTimeout(() => {
-                // Show success message
-                showNotification('Message sent successfully!', 'success');
+                // Show success state on button
+                submitBtn.innerHTML = `
+                    <svg class="w-4 h-4 text-white shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    <span>Inquiry Sent Successfully!</span>
+                `;
+                submitBtn.classList.remove('from-indigo-600', 'via-purple-600', 'to-cyan-600');
+                submitBtn.classList.add('bg-emerald-600');
 
-                // Reset form
+                // Show notification
+                showNotification(`Thank you, ${data.name || 'there'}! Your inquiry was delivered. I'll reply within 24 hours.`, 'success');
+
+                // Reset form & counter
                 form.reset();
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-            }, 2000);
+                const counter = document.getElementById('char-counter');
+                if (counter) counter.textContent = '0 / 1000';
+
+                // Reset interest pills
+                document.querySelectorAll('.interest-pill').forEach(p => {
+                    p.classList.remove('active-pill', 'bg-gradient-to-r', 'from-indigo-600', 'to-purple-600', 'text-white', 'border-transparent', 'shadow-sm');
+                    p.classList.add('bg-gray-50/70', 'dark:bg-gray-800/50', 'text-gray-700', 'dark:text-gray-300', 'border-gray-200', 'dark:border-gray-700');
+                });
+
+                // Restore button after 3.5s
+                setTimeout(() => {
+                    submitBtn.innerHTML = originalHTML;
+                    submitBtn.classList.remove('bg-emerald-600');
+                    submitBtn.classList.add('from-indigo-600', 'via-purple-600', 'to-cyan-600');
+                    submitBtn.disabled = false;
+                }, 3500);
+            }, 1200);
         });
     }
 }
