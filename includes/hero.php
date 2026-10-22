@@ -21,7 +21,7 @@
                     <div
                         class="inline-flex items-center gap-2 px-3 py-1 bg-indigo-50/80 dark:bg-indigo-950/80 backdrop-blur-sm border border-indigo-200 dark:border-indigo-800 rounded-full text-sm font-semibold text-indigo-600 dark:text-indigo-400 mx-auto lg:mx-0">
                         <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-                        Available for Opportunities
+                        Available for Opportunities &bull; Islamabad, PK
                     </div>
 
                     <!-- Name and Title -->
@@ -38,10 +38,8 @@
                         </div>
                         <p
                             class="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                            Computer System Engineer specializing in AI, Web Development, Data Science, and Digital
-                            Learning.
-                            Passionate about building intelligent solutions and mentoring the next generation of tech
-                            professionals.
+                            Computer System Engineer, leading AI Developer &amp; Computer Trainer based in Islamabad, Pakistan.
+                            Specializing in Computer Vision (YOLOv8, MediaPipe), Embedded Robotics &amp; IoT, and Enterprise Web Platforms.
                         </p>
                     </div>
 

@@ -71,12 +71,12 @@
                                 <span class="font-grotesk text-base font-bold block text-white leading-tight">
                                     Engr. Aamir Jamil
                                 </span>
-                                <span class="text-xs text-indigo-400 font-semibold block">Computer System Engineer</span>
+                                <span class="text-xs text-indigo-400 font-semibold block">AI Expert, Developer &amp; Trainer</span>
                             </div>
                         </div>
 
                         <p class="text-gray-400 text-xs sm:text-sm leading-relaxed mb-5">
-                            Building production-grade AI solutions, enterprise web platforms, and smart IoT automation. Empowering learners through STEAM and AI robotics education.
+                            Islamabad's leading AI developer, computer trainer, and systems engineer. Building production-grade AI pipelines, enterprise web platforms, and smart IoT automation.
                         </p>
 
                         <!-- Verified 5-Network Connected Social Bar -->
@@ -288,7 +288,7 @@
                                 </svg>
                                 <div>
                                     <p class="text-gray-500 text-[11px] font-medium uppercase">Headquarters</p>
-                                    <p class="text-gray-300 text-xs sm:text-sm">Islamabad, Pakistan (UTC+5)</p>
+                                    <p class="text-gray-300 text-xs sm:text-sm">Islamabad, Pakistan &bull; Serving ISB &amp; Worldwide</p>
                                 </div>
                             </li>
                         </ul>

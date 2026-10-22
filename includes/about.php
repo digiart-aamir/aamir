@@ -16,7 +16,7 @@
                     </span>
                 </h2>
                 <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                    Computer System Engineer | AI, Robotics & IoT Developer | Web Developer | STEAM & AI Educator
+                    AI Expert &amp; Developer in Islamabad | Computer System Engineer | AI &amp; Computer Trainer | Robotics &amp; IoT
                 </p>
             </div>
 
@@ -94,7 +94,7 @@
                                 Bridging Intelligent Algorithms with Real-World Physical Systems
                             </h3>
                             <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-                                I am a Computer System Engineer passionate about Artificial Intelligence, Robotics, IoT, and Modern Web Systems. I specialize in building end-to-end intelligent architectures — from training machine learning models and deploying embedded microcontrollers (ESP32/Raspberry Pi) to crafting responsive full-stack applications.
+                                Recognized as a leading AI Expert, Developer, and Computer Trainer in Islamabad, Pakistan. I bridge intelligent machine learning models with real-world physical systems — from training computer vision pipelines (YOLOv8, MediaPipe) and deploying embedded IoT hardware (ESP32/ESP-NOW) to crafting enterprise full-stack web platforms.
                             </p>
                         </div>
                     </div>
@@ -147,8 +147,8 @@
                                     🎓
                                 </div>
                                 <div>
-                                    <h4 class="font-bold text-gray-900 dark:text-white text-base">STEAM Educator</h4>
-                                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">500+ students mentored across AI, coding, and hands-on robotics workshops worldwide.</p>
+                                    <h4 class="font-bold text-gray-900 dark:text-white text-base">AI &amp; Computer Trainer</h4>
+                                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Leading computer trainer in Islamabad. 500+ students and engineers mentored across AI, Python bootcamps, and robotics labs.</p>
                                 </div>
                             </div>
                         </div>

@@ -22,7 +22,7 @@
                         </span>
                     </h2>
                     <p class="text-base sm:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
-                        End-to-end technical consulting and execution — from custom AI pipelines and full-stack web applications to embedded robotics and technical training.
+                        End-to-end technical consulting by Islamabad's leading AI developer &amp; trainer — from custom AI pipelines and full-stack web applications to embedded robotics and professional computer training.
                     </p>
                 </div>
 
@@ -145,16 +145,16 @@
                             </div>
 
                             <h3 class="text-base sm:text-lg font-bold font-grotesk text-gray-900 dark:text-white mb-2 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
-                                AI Agents &amp; Vision
+                                AI &amp; Vision Development
                             </h3>
                             <p class="text-gray-600 dark:text-gray-300 text-xs sm:text-[13px] leading-relaxed mb-4 flex-grow">
-                                Computer vision for real-time tracking, autonomous AI agents, conversational chatbots, RAG knowledge retrieval, and edge deployments.
+                                Bespoke AI development for clients in Islamabad and worldwide — real-time computer vision (YOLOv8, MediaPipe), autonomous AI agents, conversational chatbots, and edge deployments.
                             </p>
 
                             <div class="flex flex-wrap gap-1.5 pt-3 border-t border-gray-100 dark:border-gray-700/60 mt-auto">
+                                <span class="text-[10px] font-semibold px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-700/60 text-gray-700 dark:text-gray-300">AI Dev ISB</span>
                                 <span class="text-[10px] font-semibold px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-700/60 text-gray-700 dark:text-gray-300">Computer Vision</span>
                                 <span class="text-[10px] font-semibold px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-700/60 text-gray-700 dark:text-gray-300">AI Agents</span>
-                                <span class="text-[10px] font-semibold px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-700/60 text-gray-700 dark:text-gray-300">RAG Chatbots</span>
                             </div>
                         </div>
                         <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-500 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -244,16 +244,16 @@
                             </div>
 
                             <h3 class="text-base sm:text-lg font-bold font-grotesk text-gray-900 dark:text-white mb-2 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
-                                STEAM &amp; AI Training
+                                AI &amp; Computer Training
                             </h3>
                             <p class="text-gray-600 dark:text-gray-300 text-xs sm:text-[13px] leading-relaxed mb-4 flex-grow">
-                                Customized training curricula, YouTube masterclasses, hands-on STEAM robotics workshops, and technical developer mentorship.
+                                Premier AI and computer trainer in Islamabad. Customized corporate training curricula, hands-on STEAM robotics workshops, Python bootcamps, and technical mentorship.
                             </p>
 
                             <div class="flex flex-wrap gap-1.5 pt-3 border-t border-gray-100 dark:border-gray-700/60 mt-auto">
-                                <span class="text-[10px] font-semibold px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-700/60 text-gray-700 dark:text-gray-300">STEAM Labs</span>
-                                <span class="text-[10px] font-semibold px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-700/60 text-gray-700 dark:text-gray-300">Workshops</span>
-                                <span class="text-[10px] font-semibold px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-700/60 text-gray-700 dark:text-gray-300">Mentorship</span>
+                                <span class="text-[10px] font-semibold px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-700/60 text-gray-700 dark:text-gray-300">AI Trainer ISB</span>
+                                <span class="text-[10px] font-semibold px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-700/60 text-gray-700 dark:text-gray-300">Computer Trainer</span>
+                                <span class="text-[10px] font-semibold px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-700/60 text-gray-700 dark:text-gray-300">Robotics Labs</span>
                             </div>
                         </div>
                         <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-indigo-500 to-violet-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

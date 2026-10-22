@@ -4,17 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engr. Aamir Jamil - Computer System Engineer | AI & Web Developer | STEAM/IOT/AI Educator | Portfolio</title>
+    <title>Engr. Aamir Jamil | Best AI Expert, Developer &amp; Trainer in Islamabad</title>
 
     <!-- SEO Meta Tags -->
     <meta name="description"
-        content="Engr. Aamir Jamil - Computer System Engineer, AI & Web Developer, STEAM/IOT/AI Educator. Building intelligent solutions and empowering the next generation of tech professionals.">
+        content="Engr. Aamir Jamil — Leading AI Expert, Computer Vision &amp; Robotics Engineer, and AI/Computer Trainer in Islamabad, Pakistan. 4+ years experience, 11+ production projects, 14 Kaggle datasets.">
     <meta name="keywords"
-        content="Aamir Jamil, Computer System Engineer, AI Engineer, Web Developer, STEAM Educator, IOT Educator, AI Educator, Python, Web Development, Data Science, Islamabad, Pakistan">
-    <meta name="author" content="Aamir Jamil">
+        content="best AI expert in Islamabad, best AI expert in islamabd, best AI trainer in Islamabad, computer trainer in Islamabad, AI developer in isb, AI dvelper in isb, best AI trainer computer trainer, AI developer in Islamabad, computer trainer isb, machine learning engineer Islamabad, robotics engineer Islamabad, computer system engineer Islamabad, Python trainer Islamabad, hire AI engineer in Islamabad, YOLOv8 developer, MediaPipe face recognition, IoT prototyping, ASBots, Aamir Jamil">
+    <meta name="author" content="Engr. Aamir Jamil">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="googlebot" content="index, follow">
     <meta name="bingbot" content="index, follow">
+
+    <!-- Local SEO Geo Meta Tags (Islamabad, Pakistan) -->
+    <meta name="geo.region" content="PK-IS">
+    <meta name="geo.placename" content="Islamabad">
+    <meta name="geo.position" content="33.6844;73.0479">
+    <meta name="ICBM" content="33.6844, 73.0479">
 
     <!-- Performance Meta Tags -->
     <meta http-equiv="X-DNS-Prefetch-Control" content="on">
@@ -23,22 +29,22 @@
     <!-- Open Graph Meta Tags -->
     <meta property="og:type" content="website">
     <meta property="og:title"
-        content="Engr. Aamir Jamil - Computer System Engineer | AI & Web Developer | STEAM/IOT/AI Educator">
+        content="Engr. Aamir Jamil | Best AI Expert, Developer &amp; Trainer in Islamabad">
     <meta property="og:description"
-        content="Computer System Engineer specializing in AI, Web Development, and STEM/IoT/AI Education. Building intelligent solutions and empowering tech professionals.">
+        content="Top-rated Computer System Engineer &amp; AI Developer based in Islamabad, Pakistan. Specializing in Computer Vision, Robotics &amp; IoT, and Enterprise Web.">
     <meta property="og:image" content="https://aamir.asbots.com/portfolio/assets/img/my-profile-img.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:url" content="https://aamir.asbots.com/portfolio/">
-    <meta property="og:site_name" content="Aamir Jamil Portfolio">
+    <meta property="og:site_name" content="Engr. Aamir Jamil Portfolio">
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title"
-        content="Engr. Aamir Jamil - Computer System Engineer | AI & Web Developer | STEAM/IOT/AI Educator">
+        content="Engr. Aamir Jamil | Best AI Expert, Developer &amp; Trainer in Islamabad">
     <meta name="twitter:description"
-        content="Computer System Engineer specializing in AI, Web Development, and STEM/IoT/AI Education.">
+        content="Top-rated Computer System Engineer &amp; AI Developer based in Islamabad, Pakistan. Specializing in Computer Vision, Robotics &amp; IoT, and Enterprise Web.">
     <meta name="twitter:image" content="https://aamir.asbots.com/portfolio/assets/img/my-profile-img.png">
     <meta name="twitter:creator" content="@aamirjamil">
 
@@ -59,57 +65,8 @@
     <!-- Resource Hints -->
     <link rel="preload"
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" as="style">
-    <link rel="preload" href="assets/css/style.css?v=3" as="style">
+    <link rel="preload" href="assets/css/style.css?v=4" as="style">
     <link rel="preload" href="assets/js/main.js?v=3" as="script">
-
-    <!-- Enhanced SEO Meta Tags -->
-    <meta name="description"
-        content="Computer System Engineer specializing in AI, AI Agents, RAG, Web Development, and STEAM/IOT/AI Education. 15+ projects, 500+ students taught.">
-    <meta name="keywords"
-        content="Aamir Jamil, AI Engineer, AI Agents, RAG, Chatbots, REST API, Machine Learning, Web Developer, Robotics, IoT, Python, JavaScript, React, FastAPI">
-    <meta name="author" content="Aamir Jamil">
-
-    <!-- Enhanced SEO Meta Tags -->
-    <meta name="robots" content="index, follow, max-image-preview:large">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Engr. Aamir Jamil - Computer System Engineer & AI & Web Developer">
-    <meta property="og:description"
-        content="Computer System Engineer specializing in AI Agents, RAG, Web Development, and STEAM/IOT/AI Education">
-    <meta property="og:image" content="https://aamir.asbots.com/portfolio/assets/img/profile.jpg">
-    <meta property="og:url" content="https://aamir.asbots.com/portfolio/">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Engr. Aamir Jamil - Computer System Engineer">
-    <meta name="twitter:description" content="Computer System Engineer | AI Agents & RAG | Web Developer | STEAM/IOT/AI Educator">
-    <meta name="twitter:image" content="https://aamir.asbots.com/portfolio/assets/img/profile.jpg">
-
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Engr. Aamir Jamil",
-        "jobTitle": ["Computer System Engineer", "AI & Web Developer", "STEAM/IOT/AI Educator"],
-        "url": "https://aamir.asbots.com/portfolio/",
-        "sameAs": [
-            "https://linkedin.com/in/engr-aamir-jamil-460b20262/",
-            "https://github.com/digiart-aamir",
-            "https://www.kaggle.com/engraamirjamil",
-            "https://www.youtube.com/@engr-aamir"
-        ],
-        "knowsAbout": [
-            "AI Autonomous Agents",
-            "Retrieval-Augmented Generation (RAG)",
-            "Conversational Chatbots",
-            "LLM & REST APIs",
-            "Machine Learning",
-            "Artificial Intelligence",
-            "Robotics & IoT",
-            "Web Development",
-            "Python",
-            "React"
-        ]
-    }
-    </script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -210,7 +167,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css?v=3">
+    <link rel="stylesheet" href="assets/css/style.css?v=4">
 
     <!-- Hide Scrollbar Styles -->
     <style>
@@ -239,45 +196,116 @@
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
     <link rel="apple-touch-icon" href="assets/img/my-profile-img.png">
 
-    <!-- Structured Data (JSON-LD) -->
+    <!-- Master Structured Data (Schema.org Graph for Global & Local Islamabad SEO) -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Engr. Aamir Jamil",
-        "jobTitle": ["Computer System Engineer", "AI & Web Developer", "STEAM/IOT/AI Educator"],
-        "description": "Computer System Engineer specializing in AI, Web Development, and STEAM/IOT/AI Education. Building intelligent solutions and empowering the next generation of tech professionals.",
-        "url": "https://aamir.asbots.com/portfolio/",
-        "image": "https://aamir.asbots.com/portfolio/assets/img/my-profile-img.png",
-        "email": ["digiart.aamir@gmail.com", "chaamirjamil08@gmail.com", "aamir@asbots.com"],
-        "telephone": "+92 341 4579704",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Islamabad",
-            "addressCountry": "Pakistan"
-        },
-        "sameAs": [
-            "https://www.facebook.com/aamir.jamil.779857",
-            "https://www.instagram.com/aamirjamil.13/",
-            "https://www.linkedin.com/in/engr-aamir-jamil-460b20262/",
-            "https://github.com/digiart-aamir",
-            "https://www.kaggle.com/engraamirjamil",
-            "https://www.youtube.com/@engr-aamir",
-            "https://join.skype.com/invite/u1litbVeQ7kB"
-        ],
-        "knowsAbout": [
-            "Artificial Intelligence", "Machine Learning", "Python Programming", "Web Development", 
-            "Data Science", "Computer Vision", "Natural Language Processing", "Full-Stack Development",
-            "React", "Node.js", "TensorFlow", "PyTorch", "Data Analysis", "Cybersecurity"
-        ],
-        "offers": {
-            "@type": "Offer",
-            "serviceType": ["AI Development", "Web Development", "Data Science Consulting", "Technical Training"],
-            "availableChannel": {
-                "@type": "ServiceChannel",
-                "availableLanguage": ["English", "Urdu"]
+        "@graph": [
+            {
+                "@type": "Person",
+                "@id": "https://aamir.asbots.com/portfolio/#person",
+                "name": "Engr. Aamir Jamil",
+                "alternateName": ["Aamir Jamil", "Engr Aamir"],
+                "jobTitle": [
+                    "AI Expert & Solutions Architect",
+                    "Computer System Engineer",
+                    "AI & Computer Trainer",
+                    "Robotics & IoT Engineer",
+                    "Full-Stack Web Developer"
+                ],
+                "description": "Top-rated AI Expert, Computer System Engineer, and AI Trainer based in Islamabad, Pakistan. Specializing in Computer Vision (YOLOv8, MediaPipe), Embedded Robotics (ESP32), Full-Stack Web, and STEAM Training.",
+                "url": "https://aamir.asbots.com/portfolio/",
+                "image": "https://aamir.asbots.com/portfolio/assets/img/my-profile-img.png",
+                "email": ["digiart.aamir@gmail.com", "aamir@asbots.com"],
+                "telephone": "+92 341 4579704",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Islamabad",
+                    "addressRegion": "Islamabad Capital Territory",
+                    "postalCode": "44000",
+                    "addressCountry": "PK"
+                },
+                "sameAs": [
+                    "https://www.linkedin.com/in/engr-aamir-jamil-460b20262/",
+                    "https://github.com/digiart-aamir",
+                    "https://www.kaggle.com/engraamirjamil",
+                    "https://asbots.com",
+                    "https://www.youtube.com/@engr-aamir"
+                ],
+                "knowsAbout": [
+                    "Artificial Intelligence", "Machine Learning", "Computer Vision", 
+                    "YOLOv8", "Google MediaPipe", "Face Recognition", "Deep Learning", 
+                    "ESP32", "Robotics & IoT", "Python Programming", "Full-Stack Web Development", 
+                    "PHP & MySQL", "Tailwind CSS", "Kaggle Open Datasets", "STEAM & AI Education"
+                ]
+            },
+            {
+                "@type": "ProfessionalService",
+                "@id": "https://aamir.asbots.com/portfolio/#service",
+                "name": "Engr. Aamir Jamil — AI & Embedded Systems Engineering",
+                "image": "https://aamir.asbots.com/portfolio/assets/img/my-profile-img.png",
+                "url": "https://aamir.asbots.com/portfolio/",
+                "telephone": "+92 341 4579704",
+                "priceRange": "$$",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Islamabad",
+                    "addressRegion": "Islamabad Capital Territory",
+                    "postalCode": "44000",
+                    "addressCountry": "PK"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 33.6844,
+                    "longitude": 73.0479
+                },
+                "areaServed": [
+                    { "@type": "City", "name": "Islamabad" },
+                    { "@type": "City", "name": "Rawalpindi" },
+                    { "@type": "Country", "name": "Pakistan" },
+                    { "@type": "Place", "name": "Worldwide" }
+                ],
+                "provider": { "@id": "https://aamir.asbots.com/portfolio/#person" },
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "AI, Robotics & Software Engineering Services",
+                    "itemListElement": [
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Computer Vision & Face Recognition Systems (YOLOv8, MediaPipe)",
+                                "description": "Custom automated biometric systems, real-time edge face recognition, and object detection pipelines."
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "AI & Computer Programming Training in Islamabad",
+                                "description": "Corporate workshops, university guest lectures, and practical hands-on coding training across AI, Python, and Robotics in Islamabad."
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "IoT Hardware & Autonomous Robotics Prototyping (ESP32, ESP-NOW)",
+                                "description": "Custom autonomous mobile robots, dual-axis solar trackers, and serverless mesh telemetry."
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Enterprise Full-Stack Web & SaaS Platform Architecture",
+                                "description": "Responsive high-performance web systems using PHP, MySQL, REST APIs, Tailwind CSS, and OAuth authentication."
+                            }
+                        }
+                    ]
+                }
             }
-        }
+        ]
     }
     </script>
 

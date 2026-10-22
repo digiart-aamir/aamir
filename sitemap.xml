@@ -77,6 +77,12 @@
             <image:title>AI Intelligent Dual Axis Solar Tracker</image:title>
             <image:caption>Computer vision-driven autonomous dual axis solar harvesting tracker.</image:caption>
         </image:image>
+
+        <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/ai-attendance-system.png</image:loc>
+            <image:title>AI-Powered Classroom Attendance System (YOLOv8 &amp; Google MediaPipe)</image:title>
+            <image:caption>Automated biometric attendance tracking system using computer vision, YOLOv8 multi-face detection, and MediaPipe facial mesh landmarks by Engr. Aamir Jamil.</image:caption>
+        </image:image>
         
     </url>
 

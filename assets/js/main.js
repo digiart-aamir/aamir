@@ -275,9 +275,10 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initialize Typed.js
     const typed = new Typed('#typed-text', {
         strings: [
+            'AI Expert & Developer in Islamabad',
             'Computer System Engineer',
-            'AI & Web Developer',
-            'STEAM/IOT/AI Educator'
+            'AI & Computer Trainer (Islamabad / Remote)',
+            'Computer Vision & Robotics Specialist'
         ],
         typeSpeed: 50,
         backSpeed: 30,
