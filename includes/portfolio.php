@@ -34,7 +34,7 @@
                 <button
                     class="filter-btn px-4 sm:px-5 py-2 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 text-xs sm:text-sm font-semibold hover:bg-gray-200 dark:hover:bg-gray-600 transform hover:scale-105 transition-all duration-300"
                     data-filter="ml">
-                    Machine Learning
+                    AI (ML, DL)
                 </button>
                 <button
                     class="filter-btn px-4 sm:px-5 py-2 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 text-xs sm:text-sm font-semibold hover:bg-gray-200 dark:hover:bg-gray-600 transform hover:scale-105 transition-all duration-300"
@@ -58,8 +58,8 @@
                 </button>
             </div>
 
-            <!-- Balanced Grid: 2 Clean Rows of 5 Cards on XL (Optimized VH for 10 Projects) -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5 w-full">
+            <!-- Balanced Grid: Responsive Layout for Portfolio Showcase -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 w-full">
 
                 <!-- 01: Laptop Price Prediction -->
                 <div class="portfolio-item group flex flex-col" data-category="ml" data-aos="fade-up" data-aos-delay="100">
@@ -104,7 +104,50 @@
                     </div>
                 </div>
 
-                <!-- 02: WhatsApp Chat Analysis -->
+                <!-- 02: AI Powered Classroom Attendance System (Face Recognition / MediaPipe / YOLO) -->
+                <div class="portfolio-item group flex flex-col" data-category="ml" data-aos="fade-up" data-aos-delay="120">
+                    <div class="bento-card rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:border-purple-500/40 transition-all duration-300 border border-gray-200/70 dark:border-gray-700/70 bg-white/90 dark:bg-gray-800/90 flex flex-col h-full group">
+                        <!-- Card Image Header -->
+                        <div class="relative h-40 overflow-hidden bg-gray-100 dark:bg-gray-900">
+                            <img src="assets/img/portfolio/ai-attendance-system.png" alt="AI Powered Classroom Attendance System"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter blur-md opacity-0"
+                                loading="lazy" decoding="async" width="400" height="160"
+                                onload="this.classList.remove('blur-md', 'opacity-0');">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-950/85 via-gray-950/20 to-transparent"></div>
+                            <div class="absolute top-2.5 left-2.5">
+                                <span class="px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow">
+                                    Face Recognition AI
+                                </span>
+                            </div>
+                            <div class="absolute bottom-2.5 left-3 right-3 text-white">
+                                <h3 class="text-sm sm:text-base font-bold font-grotesk leading-tight truncate">Classroom Attendance AI</h3>
+                            </div>
+                        </div>
+
+                        <!-- Card Body -->
+                        <div class="p-4 flex flex-col flex-grow justify-between space-y-3">
+                            <p class="text-gray-600 dark:text-gray-300 text-xs sm:text-[13px] leading-relaxed line-clamp-2">
+                                Automated smart attendance via YOLOv8 face detection, Google MediaPipe mesh landmarks, and 99.4% biometric recognition.
+                            </p>
+
+                            <div class="flex flex-wrap gap-1">
+                                <span class="px-2 py-0.5 bg-purple-50 dark:bg-purple-950/60 text-purple-600 dark:text-purple-300 text-[10px] font-semibold rounded border border-purple-200/60 dark:border-purple-800/40">MediaPipe</span>
+                                <span class="px-2 py-0.5 bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-300 text-[10px] font-semibold rounded border border-indigo-200/60 dark:border-indigo-800/40">YOLOv8</span>
+                                <span class="px-2 py-0.5 bg-cyan-50 dark:bg-cyan-950/60 text-cyan-600 dark:text-cyan-300 text-[10px] font-semibold rounded border border-cyan-200/60 dark:border-cyan-800/40">OpenCV</span>
+                            </div>
+
+                            <div class="pt-2 border-t border-gray-100 dark:border-gray-700/60 flex items-center justify-between">
+                                <span class="text-[11px] text-gray-400 font-medium">Computer Vision</span>
+                                <button onclick="openProjectModal('ai-attendance')"
+                                    class="px-3.5 py-1.5 bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-xs font-bold rounded-lg hover:shadow shadow-purple-500/20 hover:scale-105 transform transition-all duration-200">
+                                    Details &rarr;
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 03: WhatsApp Chat Analysis -->
                 <div class="portfolio-item group flex flex-col" data-category="data" data-aos="fade-up" data-aos-delay="150">
                     <div class="bento-card rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 border border-gray-200/70 dark:border-gray-700/70 bg-white/90 dark:bg-gray-800/90 flex flex-col h-full group">
                         <!-- Card Image Header -->

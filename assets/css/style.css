@@ -279,10 +279,28 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
-/* Custom Selection */
+/* Custom Selection - Accessible high-contrast solid colors */
 ::selection {
-    background: linear-gradient(135deg, #6366f1, #a855f7);
-    color: white;
+    background-color: #4f46e5; /* Deep Indigo 600 - rich visible contrast in light mode */
+    color: #ffffff !important;
+}
+
+::-moz-selection {
+    background-color: #4f46e5;
+    color: #ffffff !important;
+}
+
+/* Dark Mode Selection */
+.dark ::selection,
+body.dark ::selection {
+    background-color: #818cf8; /* Light Indigo 400 */
+    color: #0f172a !important; /* Slate 900 dark text for razor-sharp legibility */
+}
+
+.dark ::-moz-selection,
+body.dark ::-moz-selection {
+    background-color: #818cf8;
+    color: #0f172a !important;
 }
 
 /* Professional Loader Animations */

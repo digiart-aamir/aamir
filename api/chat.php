@@ -59,11 +59,12 @@ Key Facts about Engr. Aamir Jamil:
 - Education: B.S. in Computer System Engineering.
 - Students Mentored: 500+ students mentored across 200+ workshops in AI, coding, and hands-on robotics.
 - Notable Projects:
-  1. CertifAI: Interactive, mobile-first AI learning and certification platform (Live demo: https://graphics-certifai.netlify.app/).
-  2. ASBots Web & Robotics Platform: Full-stack enterprise platform (https://asbots.com).
-  3. Waiter-Less Restaurant Delivery Robot: Autonomous indoor delivery robot using ESP32, sensor fusion, and motor drivers.
-  4. Dual-Axis Solar Tracker: Automated sun-tracking hardware using ESP-NOW mesh networking boosting solar capture by 35%+.
-  5. ID-Card-Scan-and-Copy: Android utility app (Kotlin) for document and ID processing.
+  1. AI-Powered Classroom Attendance System: Computer vision automated roll-call using YOLOv8 multi-face detection, Google MediaPipe 468-point face mesh, and 99.4% biometric recognition with anti-spoofing liveness detection.
+  2. CertifAI: Interactive, mobile-first AI learning and certification platform (Live demo: https://graphics-certifai.netlify.app/).
+  3. ASBots Web & Robotics Platform: Full-stack enterprise platform (https://asbots.com).
+  4. Waiter-Less Restaurant Delivery Robot: Autonomous indoor delivery robot using ESP32, sensor fusion, and motor drivers.
+  5. Dual-Axis Solar Tracker: Automated sun-tracking hardware using ESP-NOW mesh networking boosting solar capture by 35%+.
+  6. ID-Card-Scan-and-Copy: Android utility app (Kotlin) for document and ID processing.
 - Direct Contact Info:
   - WhatsApp: +92 341 4579704 (Direct link: https://wa.me/923414579704)
   - Email: digiart.aamir@gmail.com / aamir@asbots.com

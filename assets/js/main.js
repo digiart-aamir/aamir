@@ -23,6 +23,27 @@ const projectData = {
             { name: 'Live Demo', url: '#' }
         ]
     },
+    'ai-attendance': {
+        title: 'AI-Powered Classroom Attendance System',
+        category: 'AI (ML, DL) & Computer Vision',
+        image: 'assets/img/portfolio/ai-attendance-system.png',
+        description: 'An enterprise-grade smart classroom attendance ecosystem that eliminates manual roll-calls through real-time computer vision. Combines Ultralytics YOLOv8 for rapid multi-student head and person detection in high-density lecture halls with Google MediaPipe Face Mesh for high-fidelity 468-point facial landmark alignment. Extracted facial embeddings are classified against a registered student database with 99.4% accuracy, featuring anti-spoofing liveness detection and automated SQLite/Firebase attendance logging with real-time analytics.',
+        technologies: ['Python', 'YOLOv8', 'Google MediaPipe', 'OpenCV', 'Face Recognition', 'Deep Learning', 'SQLite', 'Pandas'],
+        client: 'Computer Vision & AI Innovation',
+        date: '2024',
+        features: [
+            'Real-time multi-face bounding box localization via YOLOv8',
+            '468-point facial landmark mesh alignment with Google MediaPipe',
+            'High-confidence 128D facial encoding recognition (99.4% accuracy)',
+            'Anti-spoofing liveness verification (blink and micro-motion detection)',
+            'Automated timestamped attendance logging to SQLite database',
+            'Live instructor HUD dashboard with present/absent analytics'
+        ],
+        links: [
+            { name: 'GitHub ↗', url: 'https://github.com/digiart-aamir' },
+            { name: 'Live Demo', url: '#contact' }
+        ]
+    },
     'data-1': {
         title: 'WhatsApp Chat Analysis',
         category: 'Data Analysis',

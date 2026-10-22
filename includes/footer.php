@@ -156,7 +156,7 @@
                             <li>
                                 <a href="#portfolio" class="text-gray-400 hover:text-indigo-400 transition-colors text-xs sm:text-sm flex items-center gap-2 group">
                                     <span class="w-1.5 h-1.5 rounded-full bg-indigo-600 group-hover:bg-indigo-400 transition-colors"></span>
-                                    <span>Portfolio (10 Projects)</span>
+                                    <span>Portfolio (11 Projects)</span>
                                 </a>
                             </li>
                             <li>

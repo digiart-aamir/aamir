@@ -1,9 +1,9 @@
 // Portfolio Service Worker
 // Optimized for SEO and Performance
 
-const CACHE_NAME = 'portfolio-v5';
-const STATIC_CACHE = 'portfolio-static-v5';
-const DYNAMIC_CACHE = 'portfolio-dynamic-v5';
+const CACHE_NAME = 'portfolio-v6';
+const STATIC_CACHE = 'portfolio-static-v6';
+const DYNAMIC_CACHE = 'portfolio-dynamic-v6';
 
 // Files to cache immediately
 const STATIC_ASSETS = [
@@ -14,6 +14,7 @@ const STATIC_ASSETS = [
     'assets/img/navbar.png',
     'assets/img/my-profile-img.png',
     'assets/img/portfolio/ml-1.png',
+    'assets/img/portfolio/ai-attendance-system.png',
     'assets/img/portfolio/data-1.png',
     'assets/img/portfolio/web-1.png',
     'assets/img/portfolio/asbots-platform.png',
