@@ -11,8 +11,8 @@
             <!-- Logo -->
             <div class="flex items-center space-x-3">
                 <img src="assets/img/navbar.png" alt="Aamir Jamil"
-                    class="w-10 h-10 rounded-full object-cover border-2 border-indigo-500" loading="lazy"
-                    decoding="async" width="40" height="40">
+                    class="w-10 h-10 rounded-full object-cover border-2 border-indigo-500" loading="eager"
+                    decoding="async" width="40" height="40" fetchpriority="high">
                 <span
                     class="font-grotesk text-xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
                     Aamir Jamil

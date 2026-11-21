@@ -126,7 +126,7 @@
                         <div class="relative z-10 w-40 h-40 sm:w-48 sm:h-48 rounded-full bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 p-1.5 shadow-2xl">
                             <img src="assets/img/hero%20section.png" alt="Aamir Jamil"
                                 class="w-full h-full rounded-full object-cover border-4 border-white dark:border-gray-900"
-                                loading="eager" decoding="async" width="192" height="192">
+                                loading="eager" decoding="async" width="192" height="192" fetchpriority="high">
                         </div>
 
                         <!-- Online Status Badge -->

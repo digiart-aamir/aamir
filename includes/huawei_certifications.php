@@ -124,8 +124,8 @@ $huaweiCerts = [
 ];
 ?>
 
-<!-- Huawei ICT Academy Certifications Section (High-Density Interactive Cyber-Grid) -->
-<section id="huawei-academy" class="py-12 md:py-16 bg-white dark:bg-gray-950 relative overflow-hidden transition-colors duration-300"
+<!-- Huawei ICT Academy Certifications Section (Ultra-Compact High-Density Grid) -->
+<section id="huawei-academy" class="py-6 sm:py-8 bg-white dark:bg-gray-950 relative overflow-hidden transition-colors duration-300"
     x-data="{ 
         activeFilter: 'all',
         modalOpen: false,
@@ -137,110 +137,110 @@ $huaweiCerts = [
     }">
 
     <!-- Background Ambient Subtle Tech Elements -->
-    <div class="absolute inset-0 pointer-events-none opacity-30 dark:opacity-40">
-        <div class="absolute top-10 right-10 w-96 h-96 bg-red-600/10 dark:bg-red-600/15 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-10 left-10 w-96 h-96 bg-rose-600/10 dark:bg-rose-600/15 rounded-full blur-3xl"></div>
+    <div class="absolute inset-0 pointer-events-none opacity-25 dark:opacity-35">
+        <div class="absolute top-6 right-10 w-72 h-72 bg-red-600/10 dark:bg-red-600/15 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-6 left-10 w-72 h-72 bg-rose-600/10 dark:bg-rose-600/15 rounded-full blur-3xl"></div>
     </div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
-        <!-- Section Header -->
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4" data-aos="fade-up">
+        <!-- Section Header (Ultra-Compact) -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-4 sm:mb-5 gap-3" data-aos="fade-up">
             <div>
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-50 dark:bg-red-950/60 text-red-700 dark:text-red-300 text-xs font-semibold mb-2 border border-red-200/80 dark:border-red-900/60">
+                <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-red-50 dark:bg-red-950/60 text-red-700 dark:text-red-300 text-[11px] font-semibold mb-1 border border-red-200/80 dark:border-red-900/60">
                     <span class="w-1.5 h-1.5 rounded-full bg-red-600 animate-pulse"></span>
-                    <span>Huawei Authorized ICT Academy &bull; Certified Trainer Credentials</span>
+                    <span>Huawei Authorized ICT Academy &bull; Certified Trainer</span>
                 </div>
-                <h2 class="text-3xl sm:text-4xl font-grotesk font-extrabold text-gray-900 dark:text-white tracking-tight">
+                <h2 class="text-2xl sm:text-3xl font-grotesk font-extrabold text-gray-900 dark:text-white tracking-tight">
                     Huawei ICT <span class="bg-gradient-to-r from-red-600 via-rose-500 to-amber-500 bg-clip-text text-transparent">Academy Certifications</span>
                 </h2>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mt-1 max-w-2xl">
-                    9 official enterprise accreditations across 5G networks, artificial intelligence, and cloud/IoT infrastructure validating technical competence as Huawei Trainer at CS Technologies and Corvit Systems.
+                <p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5 max-w-xl line-clamp-1">
+                    9 verified enterprise credentials in 5G, AI, and Cloud infrastructure validating technical competence as Huawei Trainer.
                 </p>
             </div>
 
-            <!-- Dynamic Filter Pills -->
-            <div class="flex flex-wrap items-center gap-1.5 p-1 rounded-2xl bg-gray-100/80 dark:bg-gray-900/80 border border-gray-200 dark:border-gray-800 backdrop-blur-md shadow-xs">
+            <!-- Dynamic Filter Pills (Compact) -->
+            <div class="flex flex-wrap items-center gap-1 p-0.5 rounded-xl bg-gray-100/80 dark:bg-gray-900/80 border border-gray-200 dark:border-gray-800 backdrop-blur-md shadow-xs">
                 <button @click="activeFilter = 'all'"
-                    :class="activeFilter === 'all' ? 'bg-gradient-to-r from-red-600 to-rose-600 text-white shadow-md shadow-red-500/25 font-bold' : 'text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 font-medium'"
-                    class="px-3 py-1.5 rounded-xl text-xs sm:text-sm transition-all duration-200 flex items-center gap-1.5">
-                    <span>All Credentials (<?= count($huaweiCerts) ?>)</span>
+                    :class="activeFilter === 'all' ? 'bg-gradient-to-r from-red-600 to-rose-600 text-white shadow-xs font-bold' : 'text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 font-medium'"
+                    class="px-2.5 py-1 rounded-lg text-xs transition-all duration-200 flex items-center gap-1">
+                    <span>All (<?= count($huaweiCerts) ?>)</span>
                 </button>
                 <button @click="activeFilter = '5g'"
-                    :class="activeFilter === '5g' ? 'bg-gradient-to-r from-red-600 to-rose-600 text-white shadow-md shadow-red-500/25 font-bold' : 'text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 font-medium'"
-                    class="px-3 py-1.5 rounded-xl text-xs sm:text-sm transition-all duration-200 flex items-center gap-1.5">
+                    :class="activeFilter === '5g' ? 'bg-gradient-to-r from-red-600 to-rose-600 text-white shadow-xs font-bold' : 'text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 font-medium'"
+                    class="px-2.5 py-1 rounded-lg text-xs transition-all duration-200 flex items-center gap-1">
                     <span>5G &amp; Telecom (3)</span>
                 </button>
                 <button @click="activeFilter = 'ai'"
-                    :class="activeFilter === 'ai' ? 'bg-gradient-to-r from-red-600 to-rose-600 text-white shadow-md shadow-red-500/25 font-bold' : 'text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 font-medium'"
-                    class="px-3 py-1.5 rounded-xl text-xs sm:text-sm transition-all duration-200 flex items-center gap-1.5">
+                    :class="activeFilter === 'ai' ? 'bg-gradient-to-r from-red-600 to-rose-600 text-white shadow-xs font-bold' : 'text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 font-medium'"
+                    class="px-2.5 py-1 rounded-lg text-xs transition-all duration-200 flex items-center gap-1">
                     <span>AI &amp; Algorithms (3)</span>
                 </button>
                 <button @click="activeFilter = 'cloud'"
-                    :class="activeFilter === 'cloud' ? 'bg-gradient-to-r from-red-600 to-rose-600 text-white shadow-md shadow-red-500/25 font-bold' : 'text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 font-medium'"
-                    class="px-3 py-1.5 rounded-xl text-xs sm:text-sm transition-all duration-200 flex items-center gap-1.5">
+                    :class="activeFilter === 'cloud' ? 'bg-gradient-to-r from-red-600 to-rose-600 text-white shadow-xs font-bold' : 'text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 font-medium'"
+                    class="px-2.5 py-1 rounded-lg text-xs transition-all duration-200 flex items-center gap-1">
                     <span>Cloud &amp; IoT (3)</span>
                 </button>
             </div>
         </div>
 
-        <!-- 3-Column Interactive Bento Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- 3-Column Interactive Bento Grid (Compact Cards) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
             <?php foreach($huaweiCerts as $cert): ?>
                 <div x-show="activeFilter === 'all' || activeFilter === '<?= $cert['pillar'] ?>'"
-                    x-transition:enter="transition ease-out duration-300"
-                    x-transition:enter-start="opacity-0 translate-y-3 scale-[0.98]"
+                    x-transition:enter="transition ease-out duration-250"
+                    x-transition:enter-start="opacity-0 translate-y-2 scale-[0.98]"
                     x-transition:enter-end="opacity-100 translate-y-0 scale-100"
-                    class="group relative rounded-2xl bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 hover:border-red-500/50 dark:hover:border-red-500/50 shadow-sm hover:shadow-xl hover:shadow-red-500/10 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
+                    class="group relative rounded-xl bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 hover:border-red-500/50 dark:hover:border-red-500/50 shadow-xs hover:shadow-lg hover:shadow-red-500/10 hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between overflow-hidden">
                     
                     <!-- Top Gradient Line Accent -->
-                    <div class="h-1 w-full bg-gradient-to-r <?= $cert['color'] ?> opacity-80 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="h-0.5 w-full bg-gradient-to-r <?= $cert['color'] ?> opacity-80 group-hover:opacity-100 transition-opacity"></div>
 
-                    <div class="p-4 sm:p-5 flex-grow flex flex-col">
+                    <div class="p-2.5 sm:p-3 flex flex-col justify-between flex-grow">
                         
                         <!-- Top Metadata Row -->
-                        <div class="flex items-center justify-between gap-2 mb-3">
-                            <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold bg-red-50 dark:bg-red-950/70 text-red-700 dark:text-red-300 border border-red-200/70 dark:border-red-900/60">
+                        <div class="flex items-center justify-between gap-1.5 mb-1.5">
+                            <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[9px] font-mono font-bold bg-red-50 dark:bg-red-950/70 text-red-700 dark:text-red-300 border border-red-200/70 dark:border-red-900/60 truncate max-w-[170px]">
                                 <?= htmlspecialchars($cert['badge']) ?>
                             </span>
-                            <span class="text-[10px] font-mono text-gray-400 dark:text-gray-500">
+                            <span class="text-[9px] font-mono text-gray-400 dark:text-gray-500 flex-shrink-0">
                                 <?= htmlspecialchars($cert['code']) ?>
                             </span>
                         </div>
 
-                        <!-- Certificate Image Preview Frame -->
-                        <div class="relative rounded-xl overflow-hidden border border-gray-200/90 dark:border-gray-800 bg-gray-50 dark:bg-gray-950 cursor-pointer mb-3 group/img h-44 flex items-center justify-center p-1.5"
+                        <!-- Certificate Image Preview Frame (Compact Landscape) -->
+                        <div class="relative rounded-lg overflow-hidden border border-gray-200/90 dark:border-gray-800 bg-gray-50 dark:bg-gray-950 cursor-pointer mb-2 group/img h-24 sm:h-26 flex items-center justify-center p-1"
                             @click="openModal(<?= htmlspecialchars(json_encode($cert), ENT_QUOTES, 'UTF-8') ?>)">
                             <img src="<?= htmlspecialchars($cert['file']) ?>" 
                                  alt="<?= htmlspecialchars($cert['title']) ?>" 
-                                 class="w-full h-full max-h-40 object-contain rounded-lg group-hover/img:scale-102 transition-transform duration-300"
-                                 loading="lazy">
+                                 class="w-full h-full object-contain rounded group-hover/img:scale-105 transition-transform duration-300"
+                                 loading="lazy" decoding="async" width="300" height="104">
                             
                             <!-- Hover Glass Overlay -->
-                            <div class="absolute inset-0 bg-gray-950/60 backdrop-blur-xs opacity-0 group-hover/img:opacity-100 transition-opacity duration-200 flex items-center justify-center gap-2">
-                                <span class="px-3 py-1.5 rounded-xl bg-white/95 dark:bg-gray-900/95 text-gray-900 dark:text-white font-bold text-xs shadow-lg flex items-center gap-1.5 transform scale-95 group-hover/img:scale-100 transition-transform">
-                                    <svg class="w-3.5 h-3.5 text-red-600" width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <div class="absolute inset-0 bg-gray-950/60 backdrop-blur-xs opacity-0 group-hover/img:opacity-100 transition-opacity duration-200 flex items-center justify-center gap-1.5">
+                                <span class="px-2.5 py-1 rounded-lg bg-white/95 dark:bg-gray-900/95 text-gray-900 dark:text-white font-bold text-[11px] shadow-md flex items-center gap-1 transform scale-95 group-hover/img:scale-100 transition-transform">
+                                    <svg class="w-3 h-3 text-red-600" width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
                                     </svg>
-                                    <span>Inspect Credential</span>
+                                    <span>Inspect</span>
                                 </span>
                             </div>
                         </div>
 
-                        <!-- Certificate Title & Info -->
-                        <div class="flex-grow">
-                            <h3 class="text-sm sm:text-base font-bold font-grotesk text-gray-900 dark:text-white leading-snug group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors mb-1.5">
+                        <!-- Certificate Title & Summary -->
+                        <div>
+                            <h3 class="text-xs sm:text-sm font-bold font-grotesk text-gray-900 dark:text-white leading-tight group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors mb-0.5 truncate" title="<?= htmlspecialchars($cert['title']) ?>">
                                 <?= htmlspecialchars($cert['title']) ?>
                             </h3>
-                            <p class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed mb-3">
+                            <p class="text-[11px] text-gray-500 dark:text-gray-400 line-clamp-1 leading-snug mb-1.5">
                                 <?= htmlspecialchars($cert['summary']) ?>
                             </p>
                         </div>
 
-                        <!-- Micro Topics Tags -->
-                        <div class="pt-2.5 border-t border-gray-100 dark:border-gray-800/80 flex flex-wrap gap-1">
-                            <?php foreach($cert['topics'] as $topic): ?>
-                                <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400">
+                        <!-- Micro Topics Tags (Single-line truncated chips) -->
+                        <div class="pt-1.5 border-t border-gray-100 dark:border-gray-800/80 flex items-center gap-1 overflow-hidden">
+                            <?php foreach(array_slice($cert['topics'], 0, 3) as $topic): ?>
+                                <span class="text-[9px] font-mono px-1.5 py-0.2 rounded bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 truncate max-w-[100px]">
                                     <?= htmlspecialchars($topic) ?>
                                 </span>
                             <?php endforeach; ?>
@@ -248,17 +248,17 @@ $huaweiCerts = [
 
                     </div>
 
-                    <!-- Card Footer Strip -->
-                    <div class="px-4 sm:px-5 py-2.5 bg-gray-50/80 dark:bg-gray-850/80 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between text-xs">
-                        <div class="flex items-center gap-1.5 text-emerald-600 dark:text-emerald-400 font-medium text-[11px]">
-                            <svg class="w-3.5 h-3.5" width="14" height="14" fill="currentColor" viewBox="0 0 20 20">
+                    <!-- Card Footer Strip (Ultra-Compact) -->
+                    <div class="px-3 py-1.5 bg-gray-50/80 dark:bg-gray-850/80 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between text-[10px]">
+                        <div class="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 font-medium">
+                            <svg class="w-3 h-3" width="12" height="12" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                             </svg>
-                            <span>Huawei Verified</span>
+                            <span>Verified</span>
                         </div>
                         <button @click="openModal(<?= htmlspecialchars(json_encode($cert), ENT_QUOTES, 'UTF-8') ?>)"
-                            class="text-red-600 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300 font-bold text-[11px] flex items-center gap-1 transition-colors">
-                            <span>View Full</span>
+                            class="text-red-600 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300 font-bold flex items-center gap-0.5 transition-colors">
+                            <span>View</span>
                             <span class="transform group-hover:translate-x-0.5 transition-transform">&rarr;</span>
                         </button>
                     </div>
@@ -267,16 +267,16 @@ $huaweiCerts = [
             <?php endforeach; ?>
         </div>
 
-        <!-- Section Bottom Authority Badge -->
-        <div class="mt-8 p-3 rounded-2xl bg-gray-50 dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-600 dark:text-gray-400">
-            <div class="flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-red-600"></span>
-                <span>All certificates issued by <strong>Huawei Technologies Co., Ltd. &amp; Huawei ICT Academy</strong>.</span>
+        <!-- Section Bottom Authority Badge (Compact) -->
+        <div class="mt-4 p-2 sm:p-2.5 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] text-gray-500 dark:text-gray-400">
+            <div class="flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-red-600 flex-shrink-0"></span>
+                <span>Issued by <strong>Huawei Technologies Co., Ltd. &amp; Huawei ICT Academy</strong></span>
             </div>
-            <div class="flex items-center gap-3 font-mono text-[11px]">
-                <span class="text-red-600 dark:text-red-400 font-semibold">CS Technologies AI Trainer</span>
+            <div class="flex items-center gap-2 font-mono text-[10px]">
+                <span class="text-red-600 dark:text-red-400 font-medium">CS Technologies AI Trainer</span>
                 <span>&bull;</span>
-                <span class="text-red-600 dark:text-red-400 font-semibold">Corvit Systems Huawei Trainer</span>
+                <span class="text-red-600 dark:text-red-400 font-medium">Corvit Systems Huawei Trainer</span>
             </div>
         </div>
 

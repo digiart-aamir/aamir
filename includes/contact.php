@@ -51,7 +51,8 @@
                                 <div class="relative w-20 h-20 shrink-0">
                                     <div class="absolute inset-0 bg-gradient-to-r from-indigo-500 to-cyan-500 rounded-full blur-sm opacity-50 group-hover:opacity-80 transition-opacity duration-300"></div>
                                     <img src="assets/img/my-profile-img.png" alt="Engr. Aamir Jamil"
-                                        class="relative w-full h-full rounded-full object-cover border-2 border-white dark:border-gray-700 shadow-md">
+                                        class="relative w-full h-full rounded-full object-cover border-2 border-white dark:border-gray-700 shadow-md"
+                                        loading="lazy" decoding="async" width="80" height="80">
                                     <!-- Active Pulsing Beacon -->
                                     <div class="absolute bottom-0 right-0 w-5 h-5 bg-emerald-500 border-2 border-white dark:border-gray-800 rounded-full flex items-center justify-center shadow-sm"
                                         title="Available for projects">

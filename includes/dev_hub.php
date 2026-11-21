@@ -350,7 +350,7 @@ foreach (array_slice($languages, 0, 4, true) as $lang => $count) {
                                 <img src="https://ghchart.rshah.org/6366f1/digiart-aamir" 
                                     alt="Engr. Aamir Jamil GitHub Contribution Graph" 
                                     class="w-full min-w-[650px] dark:filter dark:brightness-90 dark:contrast-125"
-                                    loading="lazy">
+                                    loading="lazy" decoding="async" width="650" height="100">
                             </div>
                         </div>
 
@@ -407,7 +407,8 @@ foreach (array_slice($languages, 0, 4, true) as $lang => $count) {
                         <div class="p-4 rounded-2xl bg-gradient-to-br from-blue-50/70 to-indigo-50/70 dark:from-blue-950/40 dark:to-indigo-950/40 border border-blue-100 dark:border-blue-900/40 space-y-3">
                             <div class="flex items-center gap-3">
                                 <img src="assets/img/hero%20section.png" alt="Engr. Aamir Jamil"
-                                    class="w-12 h-12 rounded-full object-cover border-2 border-white dark:border-gray-800 shadow">
+                                    class="w-12 h-12 rounded-full object-cover border-2 border-white dark:border-gray-800 shadow"
+                                    loading="lazy" decoding="async" width="48" height="48">
                                 <div>
                                     <h4 class="font-bold text-sm text-gray-900 dark:text-white flex items-center gap-1.5">
                                         Engr. Aamir Jamil

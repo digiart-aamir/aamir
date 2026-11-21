@@ -351,10 +351,10 @@ if (is_dir($baseDir)) {
                         <?php if(!empty($spec['main_image'])): ?>
                             <div class="my-2.5 rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700/70 bg-gray-950/5 dark:bg-gray-950/40 relative group/cert cursor-pointer flex items-center justify-center max-h-[220px] sm:max-h-[240px] p-1.5"
                                  @click="openLightbox('<?= htmlspecialchars($spec['main_image']) ?>', '<?= htmlspecialchars(addslashes($spec['title'])) ?>', '<?= htmlspecialchars($spec['verify_link']) ?>')">
-                                <img src="<?= htmlspecialchars($spec['main_image']) ?>" 
+                                <img :src="selected === <?= $idx ?> ? '<?= htmlspecialchars($spec['main_image']) ?>' : ''" 
                                      alt="<?= htmlspecialchars($spec['title']) ?> Final Certificate" 
                                      class="max-h-[200px] sm:max-h-[220px] w-auto max-w-full object-contain rounded-lg group-hover/cert:scale-[1.02] transition-transform duration-300 shadow-sm"
-                                     loading="lazy">
+                                     loading="lazy" decoding="async" width="360" height="220">
                                 <div class="absolute inset-0 bg-gray-950/50 backdrop-blur-[2px] opacity-0 group-hover/cert:opacity-100 transition-opacity duration-200 flex items-center justify-center gap-2">
                                     <span class="px-3 py-1.5 rounded-full bg-white/90 text-gray-900 font-bold text-xs shadow-lg flex items-center gap-1.5 transform scale-95 group-hover/cert:scale-100 transition-transform">
                                         <svg class="w-3.5 h-3.5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
@@ -381,10 +381,10 @@ if (is_dir($baseDir)) {
                                              @click="openLightbox('<?= htmlspecialchars($mod['path']) ?>', '<?= htmlspecialchars(addslashes($mod['name'])) ?> • <?= htmlspecialchars(addslashes($spec['title'])) ?>', '<?= htmlspecialchars($spec['verify_link']) ?>')"
                                              title="<?= htmlspecialchars($mod['name']) ?>">
                                             <div class="w-16 h-12 sm:w-20 sm:h-14 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 group-hover/mod:border-blue-500 group-hover/mod:scale-105 transition-all shadow-xs relative">
-                                                <img src="<?= htmlspecialchars($mod['path']) ?>" 
+                                                <img :src="selected === <?= $idx ?> ? '<?= htmlspecialchars($mod['path']) ?>' : ''" 
                                                      alt="<?= htmlspecialchars($mod['name']) ?>" 
                                                      class="w-full h-full object-cover"
-                                                     loading="lazy">
+                                                     loading="lazy" decoding="async" width="80" height="56">
                                                 <div class="absolute inset-0 bg-blue-600/20 opacity-0 group-hover/mod:opacity-100 transition-opacity"></div>
                                             </div>
                                             <p class="text-[9px] text-gray-600 dark:text-gray-400 truncate max-w-[64px] sm:max-w-[80px] mt-0.5 leading-tight group-hover/mod:text-blue-600 dark:group-hover/mod:text-blue-400">

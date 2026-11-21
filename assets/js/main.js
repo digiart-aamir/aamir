@@ -326,7 +326,37 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Initialize contact form
     initContactForm();
+
+    // Initialize progressive image lazy loading
+    initLazyLoading();
 });
+
+// ─── Progressive Image Lazy Loading ──────────────────────────────────────────
+function initLazyLoading() {
+    if ('IntersectionObserver' in window) {
+        const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    if (img.complete) {
+                        img.classList.remove('blur-md', 'opacity-0');
+                    } else {
+                        img.addEventListener('load', () => {
+                            img.classList.remove('blur-md', 'opacity-0');
+                        }, { once: true });
+                    }
+                    observer.unobserve(img);
+                }
+            });
+        }, {
+            rootMargin: '250px 0px',
+            threshold: 0.01
+        });
+
+        lazyImages.forEach(img => imageObserver.observe(img));
+    }
+}
 
 // ─── Neural Network Canvas Background ──────────────────────────────────────
 function initNeuralNetCanvas() {

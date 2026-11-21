@@ -67,6 +67,8 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" as="style">
     <link rel="preload" href="assets/css/style.css?v=4" as="style">
     <link rel="preload" href="assets/js/main.js?v=3" as="script">
+    <link rel="preload" href="assets/img/hero%20section.png" as="image" fetchpriority="high">
+    <link rel="preload" href="assets/img/navbar.png" as="image" fetchpriority="high">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

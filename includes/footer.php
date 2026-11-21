@@ -64,7 +64,8 @@
                             <div class="relative w-12 h-12 shrink-0">
                                 <div class="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-500 to-cyan-500 blur-sm opacity-50"></div>
                                 <img src="assets/img/my-profile-img.png" alt="Engr. Aamir Jamil"
-                                    class="relative w-full h-full rounded-full object-cover border-2 border-indigo-500 shadow-md">
+                                    class="relative w-full h-full rounded-full object-cover border-2 border-indigo-500 shadow-md"
+                                    loading="lazy" decoding="async" width="48" height="48">
                                 <div class="absolute bottom-0 right-0 w-3.5 h-3.5 bg-emerald-500 border-2 border-gray-950 rounded-full"></div>
                             </div>
                             <div>
