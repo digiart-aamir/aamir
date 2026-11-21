@@ -166,9 +166,15 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#dev-hub" class="text-gray-400 hover:text-indigo-400 transition-colors text-xs sm:text-sm flex items-center gap-2 group">
+                                <a href="#specializations" class="text-gray-400 hover:text-indigo-400 transition-colors text-xs sm:text-sm flex items-center gap-2 group">
                                     <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 group-hover:bg-indigo-300 transition-colors"></span>
-                                    <span>Dev Hub (GitHub &amp; LinkedIn)</span>
+                                    <span>Coursera Specializations (6)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#huawei-academy" class="text-gray-400 hover:text-red-400 transition-colors text-xs sm:text-sm flex items-center gap-2 group">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-red-600 group-hover:bg-red-400 transition-colors"></span>
+                                    <span>Huawei ICT Academy (9 Certs)</span>
                                 </a>
                             </li>
                             <li>

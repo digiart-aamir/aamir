@@ -384,17 +384,7 @@ $metaDescription = "Curriculum Vitae of Engr. Aamir Jamil — Computer System En
                     <span>Save as PDF</span>
                 </button>
 
-                <!-- 2. Direct Download PDF (2-Page Calibrated) -->
-                <a href="old_cv/Engr_Aamir_Jamil_CV.pdf" download="Engr_Aamir_Jamil_CV.pdf"
-                    class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-semibold text-slate-700 dark:text-slate-200 bg-white dark:bg-gray-800 hover:bg-slate-50 dark:hover:bg-gray-750 border border-slate-200 dark:border-gray-700 shadow-xs hover:border-indigo-400 transition-all duration-200"
-                    title="Download 2-Page Calibrated PDF Directly">
-                    <svg class="w-3.5 h-3.5 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                    </svg>
-                    <span>Download PDF</span>
-                </a>
-
-                <!-- 3. Copy ATS Plain Text -->
+                <!-- 2. Copy ATS Plain Text -->
                 <button @click="showAtsModal = true"
                     class="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-semibold text-slate-700 dark:text-slate-200 bg-white dark:bg-gray-800 hover:bg-slate-50 dark:hover:bg-gray-750 border border-slate-200 dark:border-gray-700 transition-all duration-200"
                     title="View & copy raw text for ATS portals">

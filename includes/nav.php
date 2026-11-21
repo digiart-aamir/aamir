@@ -20,35 +20,92 @@
             </div>
 
             <!-- Desktop Menu -->
-            <div class="hidden md:flex items-center space-x-8">
+            <div class="hidden md:flex items-center space-x-3.5 lg:space-x-5 xl:space-x-6 text-sm">
                 <a href="#home"
-                    class="nav-link text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors font-medium">Home</a>
+                    class="nav-link text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors font-medium whitespace-nowrap">Home</a>
                 <a href="#about"
-                    class="nav-link text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors font-medium">About</a>
+                    class="nav-link text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors font-medium whitespace-nowrap">About</a>
                 <a href="#skills"
-                    class="nav-link text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors font-medium">Skills</a>
+                    class="nav-link text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors font-medium whitespace-nowrap">Skills</a>
                 <a href="#portfolio"
-                    class="nav-link text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors font-medium">Portfolio</a>
+                    class="nav-link text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors font-medium whitespace-nowrap">Portfolio</a>
                 <a href="#kaggle"
-                    class="nav-link text-gray-700 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium flex items-center gap-1.5">
+                    class="nav-link text-gray-700 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium flex items-center gap-1.5 whitespace-nowrap">
                     <svg class="w-3.5 h-3.5 fill-current text-[#20BEFF]" viewBox="0 0 24 24">
                         <path d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.236 0-.354-.117-.354-.352V.353c0-.233.118-.353.354-.353h2.431c.234 0 .351.12.351.353v14.343l6.203-6.272c.165-.165.328-.246.494-.246h3.232c.141 0 .225.047.258.143.047.094.025.188-.07.281l-6.883 6.637 7.049 8.358c.094.094.117.188.07.281z" />
                     </svg>
                     <span>Kaggle</span>
                 </a>
                 <a href="#dev-hub"
-                    class="nav-link text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors font-medium flex items-center gap-1.5">
+                    class="nav-link text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors font-medium flex items-center gap-1.5 whitespace-nowrap">
                     <span>Dev Hub</span>
                     <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
                 </a>
-                <a href="#specializations"
-                    class="nav-link text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors font-medium">Specializations</a>
+
+                <!-- Certifications Dropdown (Coursera + Huawei ICT) -->
+                <div class="relative" x-data="{ certsOpen: false }" @mouseleave="certsOpen = false">
+                    <button @click="certsOpen = !certsOpen" @mouseenter="certsOpen = true"
+                        class="nav-link text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors font-medium flex items-center gap-1.5 focus:outline-none whitespace-nowrap"
+                        :class="{ 'text-indigo-600 dark:text-indigo-400 font-bold': certsOpen }">
+                        <span>Certifications</span>
+                        <svg class="w-3.5 h-3.5 transition-transform duration-200" :class="{ 'rotate-180': certsOpen }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+
+                    <!-- Dropdown Menu -->
+                    <div x-show="certsOpen" 
+                         x-transition:enter="transition ease-out duration-150"
+                         x-transition:enter-start="opacity-0 translate-y-2 scale-95"
+                         x-transition:enter-end="opacity-100 translate-y-0 scale-100"
+                         x-transition:leave="transition ease-in duration-100"
+                         x-transition:leave-start="opacity-100 translate-y-0 scale-100"
+                         x-transition:leave-end="opacity-0 translate-y-2 scale-95"
+                         class="absolute left-1/2 -translate-x-1/2 mt-2 w-64 rounded-2xl bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl border border-gray-200/90 dark:border-gray-800 shadow-2xl p-2 z-50 overflow-hidden"
+                         style="display: none;">
+                        
+                        <!-- 1. Coursera Specializations -->
+                        <a href="#specializations" @click="certsOpen = false"
+                            class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-blue-50 dark:hover:bg-blue-950/60 transition-colors group">
+                            <div class="w-8 h-8 rounded-lg bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                            <div class="min-w-0">
+                                <span class="text-xs font-bold text-gray-900 dark:text-white block group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors truncate">
+                                    Coursera Specializations
+                                </span>
+                                <span class="text-[10px] text-gray-500 dark:text-gray-400 block font-mono truncate">
+                                    6 Tracks &bull; 35+ Courses
+                                </span>
+                            </div>
+                        </a>
+
+                        <!-- 2. Huawei ICT Academy -->
+                        <a href="#huawei-academy" @click="certsOpen = false"
+                            class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-red-50 dark:hover:bg-red-950/60 transition-colors group mt-1">
+                            <div class="w-8 h-8 rounded-lg bg-red-100 dark:bg-red-900/40 text-red-600 dark:text-red-400 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                                <span class="w-2.5 h-2.5 rounded-full bg-red-600"></span>
+                            </div>
+                            <div class="min-w-0">
+                                <span class="text-xs font-bold text-gray-900 dark:text-white block group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors truncate">
+                                    Huawei ICT Academy
+                                </span>
+                                <span class="text-[10px] text-gray-500 dark:text-gray-400 block font-mono truncate">
+                                    9 Enterprise Credentials
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
                 <a href="#services"
-                    class="nav-link text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors font-medium">Services</a>
+                    class="nav-link text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors font-medium whitespace-nowrap">Services</a>
                 <a href="#contact"
-                    class="nav-link text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors font-medium">Contact</a>
+                    class="nav-link text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors font-medium whitespace-nowrap">Contact</a>
                 <a href="cv.php"
-                    class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/70 hover:bg-indigo-100 dark:hover:bg-indigo-900 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800 font-bold text-xs shadow-xs hover:scale-105 transform transition-all duration-200"
+                    class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/70 hover:bg-indigo-100 dark:hover:bg-indigo-900 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800 font-bold text-xs shadow-xs hover:scale-105 transform transition-all duration-200 whitespace-nowrap shrink-0"
                     title="View Official Curriculum Vitae">
                     <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -56,7 +113,7 @@
                     <span>CV</span>
                 </a>
                 <button @click="$store.darkMode = !$store.darkMode"
-                    class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                    class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors shrink-0">
                     <svg x-show="!$store.darkMode" class="w-5 h-5 text-yellow-500" fill="currentColor"
                         viewBox="0 0 20 20">
                         <path fill-rule="evenodd"
@@ -105,8 +162,31 @@
                     <span>Dev Hub (GitHub &amp; LinkedIn)</span>
                     <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
                 </a>
-                <a href="#specializations"
-                    class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium">Specializations</a>
+                <!-- Mobile Certifications Accordion -->
+                <div x-data="{ mobileCertsOpen: true }" class="border-y border-gray-100 dark:border-gray-800 py-1.5">
+                    <button @click="mobileCertsOpen = !mobileCertsOpen"
+                        class="w-full flex items-center justify-between text-gray-700 dark:text-gray-300 font-medium py-1">
+                        <span class="flex items-center gap-2">
+                            <span>Certifications</span>
+                            <span class="text-[10px] font-mono px-1.5 py-0.2 rounded-full bg-indigo-100 dark:bg-indigo-950/70 text-indigo-600 dark:text-indigo-400 font-bold">15 Certs</span>
+                        </span>
+                        <svg class="w-4 h-4 transition-transform duration-200" :class="{ 'rotate-180': mobileCertsOpen }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div x-show="mobileCertsOpen" x-transition class="pl-3 space-y-2 mt-2 pt-1 border-l-2 border-indigo-200 dark:border-indigo-900/60 ml-1">
+                        <a href="#specializations" @click="$store.menuOpen = false"
+                            class="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 text-sm flex items-center gap-2 py-0.5">
+                            <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                            <span>Coursera Specializations (6)</span>
+                        </a>
+                        <a href="#huawei-academy" @click="$store.menuOpen = false"
+                            class="text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 text-sm flex items-center gap-2 py-0.5">
+                            <span class="w-2 h-2 rounded-full bg-red-600"></span>
+                            <span>Huawei ICT Academy (9)</span>
+                        </a>
+                    </div>
+                </div>
                 <a href="#iot-robotics"
                     class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium">IoT
                     & Robotics</a>

@@ -21,6 +21,8 @@
 
     <?php include 'includes/specializations.php'; ?>
 
+    <?php include 'includes/huawei_certifications.php'; ?>
+
     <?php include 'includes/project_modal.php'; ?>
 
     <!-- IoT & Robotics section mapping (Redirects to #portfolio) -->
