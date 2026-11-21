@@ -204,7 +204,7 @@ $metaDescription = "Curriculum Vitae of Engr. Aamir Jamil — Computer System En
         @media print {
             @page {
                 size: A4 portrait;
-                margin: 6mm 8mm 6mm 8mm; /* Clean international standard margin */
+                margin: 14mm 10mm 12mm 10mm; /* Professional executive margin with generous top spacing */
             }
 
             *, *::before, *::after {
@@ -246,36 +246,43 @@ $metaDescription = "Curriculum Vitae of Engr. Aamir Jamil — Computer System En
                 box-shadow: none !important;
             }
 
+            /* Header spacing in print */
+            header.cv-section {
+                padding-top: 2mm !important;
+                padding-bottom: 0.25rem !important;
+                margin-bottom: 0.35rem !important;
+            }
+
             /* Force Horizontal Layouts in Print regardless of screen queries */
             .contact-grid {
                 display: grid !important;
                 grid-template-columns: repeat(6, 1fr) !important;
-                gap: 3px !important;
-                margin-top: 0.15rem !important;
-                padding-top: 0.15rem !important;
+                gap: 4px !important;
+                margin-top: 0.2rem !important;
+                padding-top: 0.2rem !important;
             }
 
             .skills-grid {
                 display: grid !important;
                 grid-template-columns: repeat(2, 1fr) !important;
-                gap: 4px !important;
+                gap: 5px !important;
             }
 
             .projects-grid {
                 display: grid !important;
                 grid-template-columns: repeat(2, 1fr) !important;
-                gap: 4px !important;
+                gap: 5px !important;
             }
 
             .dual-columns {
                 display: grid !important;
                 grid-template-columns: 7fr 5fr !important;
-                gap: 4px !important;
+                gap: 5px !important;
             }
 
             /* Section & Card Spacing Control */
             .cv-section {
-                margin-bottom: 0.26rem !important;
+                margin-bottom: 0.35rem !important;
                 break-inside: auto;
             }
 
@@ -284,8 +291,8 @@ $metaDescription = "Curriculum Vitae of Engr. Aamir Jamil — Computer System En
                 break-inside: avoid !important;
                 border: 1px solid #e2e8f0 !important;
                 background: #ffffff !important;
-                padding: 0.2rem 0.42rem !important;
-                margin-bottom: 0.15rem !important;
+                padding: 0.24rem 0.45rem !important;
+                margin-bottom: 0.2rem !important;
                 border-radius: 5px !important;
             }
 
@@ -360,6 +367,10 @@ $metaDescription = "Curriculum Vitae of Engr. Aamir Jamil — Computer System En
                 height: 0 !important;
                 margin: 0 !important;
                 padding: 0 !important;
+            }
+
+            .page-break-2page + section {
+                padding-top: 3mm !important;
             }
         }
     </style>
@@ -583,7 +594,7 @@ $metaDescription = "Curriculum Vitae of Engr. Aamir Jamil — Computer System En
                 </div>
                 <div class="p-2 sm:p-2.5 rounded-lg bg-slate-50/70 dark:bg-gray-850/60 border border-slate-200/60 dark:border-gray-800 text-slate-700 dark:text-slate-300 text-xs leading-relaxed">
                     <p>
-                        <strong>Computer System Engineer &amp; AI Developer</strong> with 4+ years of cross-functional experience bridging deep neural models with physical microcontrollers, web architectures, and engineering training. Mentored <strong>500+ engineers, university students, and government scholars</strong> across machine learning, Python development, and robotics. Engineered <strong>99.4% accurate facial recognition pipelines</strong> (YOLOv8 + MediaPipe), serverless <strong>ESP32/ESP-NOW wireless mesh networks</strong>, and enterprise web platforms. Holds verified credentials from <strong>Coursera, IBM, Google, and Scrimba</strong>.
+                        <strong>Computer System Engineer &amp; AI Developer</strong> with 4+ years of cross-functional experience bridging deep neural models with physical microcontrollers, web architectures, and engineering training. Mentored <strong>500+ engineers, university students, and government scholars</strong> across machine learning, Python development, and robotics. Engineered <strong>99.4% accurate facial recognition pipelines</strong> (YOLOv8 + MediaPipe), serverless <strong>ESP32/ESP-NOW wireless mesh networks</strong>, and enterprise web platforms. Certified <strong>Huawei ICT Academy Trainer</strong> holding 9 enterprise accreditations alongside credentials from <strong>Coursera, IBM, Google, and Scrimba</strong>.
                     </p>
                 </div>
             </section>
@@ -926,6 +937,27 @@ $metaDescription = "Curriculum Vitae of Engr. Aamir Jamil — Computer System En
                         </div>
                     </div>
 
+                    <!-- Project 6: CertifAI Document & Vector Design System -->
+                    <div class="cv-card p-2 rounded-lg bg-white dark:bg-gray-850 border border-slate-200/70 dark:border-gray-800 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between gap-1 mb-1">
+                                <h3 class="font-bold font-grotesk text-slate-900 dark:text-white text-xs">
+                                    CertifAI — Document Platform &amp; Vector System
+                                </h3>
+                                <span class="px-1 py-0.2 rounded text-[9px] font-mono font-bold bg-purple-50 dark:bg-purple-950/70 text-purple-700 dark:text-purple-300 border border-purple-200/50">
+                                    Scalable SVG
+                                </span>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-300 leading-snug mb-1">
+                                High-fidelity automated document generation and verification platform. Features animated SMIL vector certificate architecture, dynamic QR cryptoseals, and multi-tenant PDF rendering pipelines.
+                            </p>
+                        </div>
+                        <div class="pt-1 border-t border-slate-100 dark:border-gray-800 flex items-center justify-between text-[10px] font-mono text-slate-500">
+                            <span>Python &bull; Vector SVG &bull; DOM &bull; Automated PDF &bull; QR</span>
+                            <a href="https://github.com/digiart-aamir" target="_blank" rel="noopener noreferrer" class="no-print font-bold text-purple-600 dark:text-purple-400 hover:underline">Code ↗</a>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
@@ -952,7 +984,16 @@ $metaDescription = "Curriculum Vitae of Engr. Aamir Jamil — Computer System En
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-slate-100 dark:divide-gray-800/60 leading-tight">
-                            <!-- 1. Scrimba -->
+                            <!-- 1. Huawei ICT Trainer -->
+                            <tr class="hover:bg-slate-50/80 dark:hover:bg-gray-850/50">
+                                <td class="py-1 pr-3 font-semibold text-slate-900 dark:text-white">Huawei Certified ICT Academy Trainer (5G, AI &amp; Cloud)</td>
+                                <td class="py-1 px-3 text-slate-600 dark:text-slate-300">Huawei Technologies &bull; ICT Academy</td>
+                                <td class="py-1 px-3 font-mono text-slate-500">2024&ndash;2026</td>
+                                <td class="py-1 pl-3 text-right no-print">
+                                    <a href="index.php#huawei-academy" class="font-semibold text-red-600 dark:text-red-400 hover:underline">Official HCIA ↗</a>
+                                </td>
+                            </tr>
+                            <!-- 2. Scrimba -->
                             <tr class="hover:bg-slate-50/80 dark:hover:bg-gray-850/50">
                                 <td class="py-1 pr-3 font-semibold text-slate-900 dark:text-white">SCRIMBA AI Engineering Specialization</td>
                                 <td class="py-1 px-3 text-slate-600 dark:text-slate-300">Scrimba / Coursera</td>
@@ -1195,6 +1236,19 @@ FLAGSHIP ENGINEERING PROJECTS
 ================================================================================
 PROFESSIONAL CERTIFICATIONS & CREDENTIALS
 ================================================================================
+HUAWEI ICT ACADEMY ACCREDITATIONS & TRAINER STATUS:
+* Huawei Certified ICT Academy Trainer (5G, AI & Cloud) | Huawei Technologies (2024-2026)
+* 5G Basics: What It's All About (HCIA-5G-B) | Huawei ICT Academy (2024)
+* 5G Network Architecture & Key Technologies (HCIA-5G-NET) | Huawei ICT Academy (2024)
+* Enterprise Computer Networks & Protocols (HCIA-DATANET) | Huawei ICT Academy (2024)
+* Artificial Intelligence Overview & Foundations (HCIA-AI-FOUND) | Huawei ICT Academy (2024)
+* Heuristic Search & Intelligent Decision AI (HCIA-AI-SEARCH) | Huawei ICT Academy (2024)
+* Algorithm Design & Computational Complexity (HCIA-ALG-PROG) | Huawei ICT Academy (2024)
+* Internet of Things (IoT) Technologies & Sensors (HCIA-IOT-ARCH) | Huawei ICT Academy (2024)
+* Cloud Computing Concepts & Virtualization (HCIA-CLOUD-SYS) | Huawei ICT Academy (2024)
+* Data Management & Enterprise Analytics (HCIA-DATA-ANLY) | Huawei ICT Academy (2024)
+
+GLOBAL INDUSTRY & UNIVERSITY SPECIALIZATIONS:
 * SCRIMBA AI Engineering Specialization (2026) | Coursera (Verify ID: 9J419P512DIC)
 * IBM Machine Learning Professional Certificate (2024) | IBM / Coursera (Verify ID: NHKMJ8SLWZ3M)
 * Google Data Analytics Professional Certificate (2023) | Google / Coursera (Verify ID: 8XK98VFWSF5H)
