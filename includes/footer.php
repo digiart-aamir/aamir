@@ -183,6 +183,13 @@
                                     <span>Get In Touch</span>
                                 </a>
                             </li>
+                            <li>
+                                <a href="cv.php" class="text-indigo-400 hover:text-indigo-300 font-semibold transition-colors text-xs sm:text-sm flex items-center gap-2 group">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 group-hover:bg-indigo-300 transition-colors"></span>
+                                    <span>Curriculum Vitae (CV)</span>
+                                    <span class="text-[10px] px-1.5 py-0.5 rounded-md bg-indigo-950/80 text-indigo-300 border border-indigo-700/60 font-mono">ATS Ready</span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
 

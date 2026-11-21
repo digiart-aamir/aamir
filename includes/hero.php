@@ -89,17 +89,25 @@
                     </div>
 
                     <!-- CTA Buttons -->
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <div class="flex flex-col sm:flex-row gap-3.5 justify-center lg:justify-start items-center">
                         <a href="#contact"
-                            class="magnetic-btn btn-shimmer px-7 py-3.5 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white font-semibold rounded-full shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 transform hover:scale-105 transition-all duration-300 text-center flex items-center justify-center gap-2">
+                            class="magnetic-btn btn-shimmer px-6 py-3.5 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white font-semibold rounded-full shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 transform hover:scale-105 transition-all duration-300 text-center flex items-center justify-center gap-2 text-sm w-full sm:w-auto">
                             <span>Get In Touch</span>
                             <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                             </svg>
                         </a>
                         <a href="#portfolio"
-                            class="magnetic-btn px-7 py-3.5 bg-white/80 dark:bg-gray-800/80 backdrop-blur-md text-indigo-600 dark:text-indigo-400 font-semibold rounded-full border border-indigo-200 dark:border-indigo-800 hover:border-indigo-500 hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-center">
+                            class="magnetic-btn px-6 py-3.5 bg-white/80 dark:bg-gray-800/80 backdrop-blur-md text-indigo-600 dark:text-indigo-400 font-semibold rounded-full border border-indigo-200 dark:border-indigo-800 hover:border-indigo-500 hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-center text-sm w-full sm:w-auto">
                             View Portfolio
+                        </a>
+                        <a href="cv.php"
+                            class="magnetic-btn px-5 py-3.5 bg-indigo-50 dark:bg-indigo-950/60 hover:bg-indigo-100 dark:hover:bg-indigo-900/80 text-indigo-700 dark:text-indigo-300 font-semibold rounded-full border border-indigo-200 dark:border-indigo-800 hover:border-indigo-500 shadow-xs hover:shadow-md transform hover:scale-105 transition-all duration-300 text-center flex items-center justify-center gap-2 text-sm w-full sm:w-auto"
+                            title="View ATS-Compliant Curriculum Vitae">
+                            <svg class="w-4 h-4 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            <span>Official CV</span>
                         </a>
                     </div>
                 </div>

@@ -76,6 +76,15 @@
                                         @engraamirjamil
                                     </a>
                                 </div>
+                                <div class="flex items-center justify-between p-3 rounded-xl bg-indigo-50/70 dark:bg-indigo-950/40 border border-indigo-200/60 dark:border-indigo-800/60">
+                                    <span class="text-xs font-bold uppercase tracking-wider text-indigo-700 dark:text-indigo-300">Curriculum Vitae</span>
+                                    <a href="cv.php" class="font-bold text-indigo-600 dark:text-indigo-400 text-xs sm:text-sm hover:underline inline-flex items-center gap-1">
+                                        <span>View CV (ATS Standard)</span>
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
