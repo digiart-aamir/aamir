@@ -51,30 +51,27 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://aamir.asbots.com/portfolio/">
 
-    <!-- Preconnect for Performance -->
+    <!-- Preconnect (Strictly most critical origins) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://unpkg.com">
-    <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
-    <!-- DNS Prefetch -->
-    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    <!-- DNS Prefetch (Non-blocking origin lookups) -->
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link rel="dns-prefetch" href="//unpkg.com">
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
 
     <!-- Resource Hints -->
     <link rel="preload"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" as="style">
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700;800;900&display=swap" as="style">
     <link rel="preload" href="assets/css/style.css?v=4" as="style">
-    <link rel="preload" href="assets/js/main.js?v=3" as="script">
+    <link rel="preload" href="assets/js/main.js?v=4" as="script">
     <link rel="preload" href="assets/img/hero%20section.png" as="image" fetchpriority="high">
     <link rel="preload" href="assets/img/navbar.png" as="image" fetchpriority="high">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonts (Single optimized async-ready declaration) -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
     <!-- Tailwind CSS -->
@@ -159,14 +156,10 @@
             else document.documentElement.classList.remove('dark');
         });
     </script>
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS Animation Library (Non-blocking async load) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></noscript>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css?v=4">

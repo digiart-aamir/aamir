@@ -7,7 +7,7 @@ $huaweiCerts = [
     [
         'id' => '5g-basics',
         'title' => '5G Basics: What It\'s All About',
-        'file' => 'assets/huawei ICT academy/5G Basics_ What it\'s all about.png',
+        'file' => 'assets/huawei ICT academy/5G Basics_ What it\'s all about.jpg',
         'pillar' => '5g',
         'pillar_name' => '5G & Telecom',
         'badge' => 'eMBB, URLLC & mMTC',
@@ -20,7 +20,7 @@ $huaweiCerts = [
     [
         'id' => '5g-network-arch',
         'title' => '5G Network Architecture & Key Technologies',
-        'file' => 'assets/huawei ICT academy/5G Network Architecture and Key Technologies.png',
+        'file' => 'assets/huawei ICT academy/5G Network Architecture and Key Technologies.jpg',
         'pillar' => '5g',
         'pillar_name' => '5G & Telecom',
         'badge' => 'Cloud RAN & Slicing',
@@ -33,7 +33,7 @@ $huaweiCerts = [
     [
         'id' => 'computer-network',
         'title' => 'Enterprise Computer Networks & Protocols',
-        'file' => 'assets/huawei ICT academy/Computer Network.png',
+        'file' => 'assets/huawei ICT academy/Computer Network.jpg',
         'pillar' => '5g',
         'pillar_name' => '5G & Telecom',
         'badge' => 'TCP/IP & Routing',
@@ -46,7 +46,7 @@ $huaweiCerts = [
     [
         'id' => 'ai-overview',
         'title' => 'Artificial Intelligence Overview & Foundations',
-        'file' => 'assets/huawei ICT academy/Overview of AI.png',
+        'file' => 'assets/huawei ICT academy/Overview of AI.jpg',
         'pillar' => 'ai',
         'pillar_name' => 'AI & Algorithms',
         'badge' => 'Neural Nets & ML',
@@ -59,7 +59,7 @@ $huaweiCerts = [
     [
         'id' => 'search-ai',
         'title' => 'Heuristic Search & Intelligent Decision AI',
-        'file' => 'assets/huawei ICT academy/Search and AI.png',
+        'file' => 'assets/huawei ICT academy/Search and AI.jpg',
         'pillar' => 'ai',
         'pillar_name' => 'AI & Algorithms',
         'badge' => 'Heuristics & Graphs',
@@ -72,7 +72,7 @@ $huaweiCerts = [
     [
         'id' => 'algorithm-design',
         'title' => 'Algorithm Design & Computational Complexity',
-        'file' => 'assets/huawei ICT academy/Algorithm and Program Design.png',
+        'file' => 'assets/huawei ICT academy/Algorithm and Program Design.jpg',
         'pillar' => 'ai',
         'pillar_name' => 'AI & Algorithms',
         'badge' => 'Data Structures & Big-O',
@@ -85,7 +85,7 @@ $huaweiCerts = [
     [
         'id' => 'iot-technologies',
         'title' => 'Internet of Things (IoT) Technologies & Sensors',
-        'file' => 'assets/huawei ICT academy/Overview of IoT Technologies.png',
+        'file' => 'assets/huawei ICT academy/Overview of IoT Technologies.jpg',
         'pillar' => 'cloud',
         'pillar_name' => 'Cloud, Data & IoT',
         'badge' => 'Sensor Fusion & Edge',
@@ -98,7 +98,7 @@ $huaweiCerts = [
     [
         'id' => 'cloud-computing',
         'title' => 'Cloud Computing Concepts & Virtualization',
-        'file' => 'assets/huawei ICT academy/Development and Basic Concepts of Cloud Computing.png',
+        'file' => 'assets/huawei ICT academy/Development and Basic Concepts of Cloud Computing.jpg',
         'pillar' => 'cloud',
         'pillar_name' => 'Cloud, Data & IoT',
         'badge' => 'IaaS / PaaS / SaaS',
@@ -111,7 +111,7 @@ $huaweiCerts = [
     [
         'id' => 'data-analytics',
         'title' => 'Data Management & Enterprise Analytics',
-        'file' => 'assets/huawei ICT academy/Data Management and Analytics.png',
+        'file' => 'assets/huawei ICT academy/Data Management and Analytics.jpg',
         'pillar' => 'cloud',
         'pillar_name' => 'Cloud, Data & IoT',
         'badge' => 'Big Data & ETL',

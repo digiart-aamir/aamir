@@ -109,7 +109,7 @@
                     <div class="bento-card rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:border-purple-500/40 transition-all duration-300 border border-gray-200/70 dark:border-gray-700/70 bg-white/90 dark:bg-gray-800/90 flex flex-col h-full group">
                         <!-- Card Image Header -->
                         <div class="relative h-40 overflow-hidden bg-gray-100 dark:bg-gray-900">
-                            <img src="assets/img/portfolio/ai-attendance-system.png" alt="AI Powered Classroom Attendance System"
+                            <img src="assets/img/portfolio/ai-attendance-system.jpg" alt="AI Powered Classroom Attendance System"
                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter blur-md opacity-0"
                                 loading="lazy" decoding="async" width="400" height="160"
                                 onload="this.classList.remove('blur-md', 'opacity-0');">
@@ -195,7 +195,7 @@
                     <div class="bento-card rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:border-purple-500/40 transition-all duration-300 border border-gray-200/70 dark:border-gray-700/70 bg-white/90 dark:bg-gray-800/90 flex flex-col h-full group">
                         <!-- Card Image Header -->
                         <div class="relative h-40 overflow-hidden bg-gray-100 dark:bg-gray-900">
-                            <img src="assets/img/portfolio/web-1.png" alt="Personal Portfolio Website"
+                            <img src="assets/img/portfolio/web-1.jpg" alt="Personal Portfolio Website"
                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter blur-md opacity-0"
                                 loading="lazy" decoding="async" width="400" height="160"
                                 onload="this.classList.remove('blur-md', 'opacity-0');">
@@ -286,7 +286,7 @@
                     <div class="bento-card rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:border-orange-500/40 transition-all duration-300 border border-gray-200/70 dark:border-gray-700/70 bg-white/90 dark:bg-gray-800/90 flex flex-col h-full group">
                         <!-- Card Image Header -->
                         <div class="relative h-40 overflow-hidden bg-gray-100 dark:bg-gray-900">
-                            <img src="assets/img/portfolio/graphics-1.png" alt="Visual & Brand Design"
+                            <img src="assets/img/portfolio/graphics-1.jpg" alt="Visual & Brand Design"
                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter blur-md opacity-0"
                                 loading="lazy" decoding="async" width="400" height="160"
                                 onload="this.classList.remove('blur-md', 'opacity-0');">
@@ -463,7 +463,7 @@
                     <div class="bento-card rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:border-indigo-500/40 transition-all duration-300 border border-gray-200/70 dark:border-gray-700/70 bg-white/90 dark:bg-gray-800/90 flex flex-col h-full group">
                         <!-- Card Image Header -->
                         <div class="relative h-40 overflow-hidden bg-gray-100 dark:bg-gray-900">
-                            <img src="assets/img/portfolio/iot-hotel-system.png" alt="ESP32 Waiter-Less Hotel System"
+                            <img src="assets/img/portfolio/iot-hotel-system.jpg" alt="ESP32 Waiter-Less Hotel System"
                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter blur-md opacity-0"
                                 loading="lazy" decoding="async" width="400" height="160"
                                 onload="this.classList.remove('blur-md', 'opacity-0');">
@@ -506,7 +506,7 @@
                     <div class="bento-card rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 border border-gray-200/70 dark:border-gray-700/70 bg-white/90 dark:bg-gray-800/90 flex flex-col h-full group">
                         <!-- Card Image Header -->
                         <div class="relative h-40 overflow-hidden bg-gray-100 dark:bg-gray-900">
-                            <img src="assets/img/portfolio/solar-harvesting.png" alt="AI Dual Axis Autonomous Solar Harvesting System"
+                            <img src="assets/img/portfolio/solar-harvesting.jpg" alt="AI Dual Axis Autonomous Solar Harvesting System"
                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter blur-md opacity-0"
                                 loading="lazy" decoding="async" width="400" height="160"
                                 onload="this.classList.remove('blur-md', 'opacity-0');">

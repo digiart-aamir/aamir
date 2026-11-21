@@ -26,7 +26,7 @@ const projectData = {
     'ai-attendance': {
         title: 'AI-Powered Classroom Attendance System',
         category: 'AI (ML, DL) & Computer Vision',
-        image: 'assets/img/portfolio/ai-attendance-system.png',
+        image: 'assets/img/portfolio/ai-attendance-system.jpg',
         description: 'An enterprise-grade smart classroom attendance ecosystem that eliminates manual roll-calls through real-time computer vision. Combines Ultralytics YOLOv8 for rapid multi-student head and person detection in high-density lecture halls with Google MediaPipe Face Mesh for high-fidelity 468-point facial landmark alignment. Extracted facial embeddings are classified against a registered student database with 99.4% accuracy, featuring anti-spoofing liveness detection and automated SQLite/Firebase attendance logging with real-time analytics.',
         technologies: ['Python', 'YOLOv8', 'Google MediaPipe', 'OpenCV', 'Face Recognition', 'Deep Learning', 'SQLite', 'Pandas'],
         client: 'Computer Vision & AI Innovation',
@@ -68,7 +68,7 @@ const projectData = {
     'web-1': {
         title: 'Personal Portfolio Website',
         category: 'Web Development',
-        image: 'assets/img/portfolio/web-1.png',
+        image: 'assets/img/portfolio/web-1.jpg',
         description: 'A modern, responsive portfolio website built with cutting-edge web technologies. Features smooth animations, dark mode support, SEO optimization, and exceptional performance. Showcases projects, skills, and professional experience in an elegant and engaging manner.',
         technologies: ['HTML5', 'CSS3', 'JavaScript', 'Tailwind CSS', 'AOS', 'Typed.js'],
         client: 'Personal Project',
@@ -110,7 +110,7 @@ const projectData = {
     'graphics-1': {
         title: 'Graphics Design Portfolio',
         category: 'Graphic Design',
-        image: 'assets/img/portfolio/graphics-1.png',
+        image: 'assets/img/portfolio/graphics-1.jpg',
         description: 'A comprehensive collection of graphic design work including social media graphics, UI/UX mockups, brand identity materials, and digital illustrations. Demonstrates proficiency in modern design tools and creative visual communication.',
         technologies: ['Canva', 'Adobe Photoshop', 'Figma', 'Illustrator', 'UI/UX Design'],
         client: 'Various Clients',
@@ -194,7 +194,7 @@ const projectData = {
     'iot-hotel-1': {
         title: 'ESP32 Waiter-Less Hotel System',
         category: 'IoT & Robotics',
-        image: 'assets/img/portfolio/iot-hotel-system.png',
+        image: 'assets/img/portfolio/iot-hotel-system.jpg',
         description: 'A fully autonomous, multi-node restaurant automation system built using three ESP32 microcontrollers communicating over the ESP-NOW wireless protocol — eliminating the need for a central server or internet connection. The system digitizes the entire food ordering and delivery workflow: customers use a Table Unit (ESP32 + 4×4 keypad + OLED display) to enter their Table ID, a security code, and their order. The order is instantly wirelessly transmitted to the Kitchen Unit (ESP32 + LCD), where staff see all orders in real time. With one button press, the kitchen relays the order to the Delivery Robot (an ESP32-powered autonomous vehicle) which navigates to the correct table and delivers the food — all without any human waiter.',
         technologies: ['ESP32 ×3', 'ESP-NOW Protocol', 'OLED Display', 'LCD Display', '4×4 Keypad', 'L298N Motor Driver', 'DC Motors', 'C++ / Arduino IDE'],
         client: 'Academic / Innovation Project',
@@ -217,7 +217,7 @@ const projectData = {
     'solar-1': {
         title: 'AI Intelligent Dual Axis Autonomous Solar Harvesting System',
         category: 'IoT & Robotics',
-        image: 'assets/img/portfolio/solar-harvesting.png',
+        image: 'assets/img/portfolio/solar-harvesting.jpg',
         description: 'AI-driven dual-axis solar tracker that maximizes energy harvest by autonomously aligning panels to the sun using computer vision and motor control.',
         technologies: ['Computer Vision', 'Motor Control', 'AI', 'ESP32'],
         client: 'Research Project',
@@ -602,54 +602,75 @@ function initSmoothScroll() {
 }
 
 // Scroll effects
-function initScrollEffects() {
-    const navbar = document.querySelector('nav');
-    let lastScroll = 0;
-
-    window.addEventListener('scroll', () => {
-        const currentScroll = window.pageYOffset;
-
-        // Navbar background on scroll
-        if (currentScroll > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-
-        // Hide/show navbar on scroll
-        if (currentScroll > lastScroll && currentScroll > 100) {
-            navbar.style.transform = 'translateY(-100%)';
-        } else {
-            navbar.style.transform = 'translateY(0)';
-        }
-
-        lastScroll = currentScroll;
-
-        // Update active nav link based on scroll position
-        updateActiveNavLink();
-    });
+// Cached sections map to prevent Forced Reflow on scroll
+let cachedSections = [];
+function cacheSectionPositions() {
+    cachedSections = Array.from(document.querySelectorAll('section[id]')).map(sec => ({
+        id: sec.getAttribute('id'),
+        top: sec.offsetTop,
+        bottom: sec.offsetTop + sec.offsetHeight
+    }));
 }
 
-// Update active navigation link
 function updateActiveNavLink() {
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('a[href^="#"]');
-
+    if (cachedSections.length === 0) cacheSectionPositions();
+    const scrollY = window.pageYOffset || document.documentElement.scrollTop;
     let current = '';
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (window.pageYOffset >= (sectionTop - 200)) {
-            current = section.getAttribute('id');
-        }
-    });
 
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === '#' + current) {
-            link.classList.add('active');
+    for (let i = 0; i < cachedSections.length; i++) {
+        const sec = cachedSections[i];
+        if (scrollY >= sec.top - 200) {
+            current = sec.id;
         }
-    });
+    }
+
+    if (current) {
+        const navLinks = document.querySelectorAll('nav a[href^="#"]');
+        navLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            if (href === '#' + current) {
+                link.classList.add('active');
+            } else if (link.classList.contains('active')) {
+                link.classList.remove('active');
+            }
+        });
+    }
+}
+
+function initScrollEffects() {
+    const navbar = document.querySelector('nav');
+    if (!navbar) return;
+    let lastScroll = 0;
+    let scrollTicking = false;
+
+    window.addEventListener('resize', cacheSectionPositions, { passive: true });
+
+    window.addEventListener('scroll', () => {
+        if (!scrollTicking) {
+            window.requestAnimationFrame(() => {
+                const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+                // Navbar background on scroll
+                if (currentScroll > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+
+                // Hide/show navbar on scroll
+                if (currentScroll > lastScroll && currentScroll > 100) {
+                    navbar.style.transform = 'translateY(-100%)';
+                } else {
+                    navbar.style.transform = 'translateY(0)';
+                }
+
+                lastScroll = currentScroll;
+                updateActiveNavLink();
+                scrollTicking = false;
+            });
+            scrollTicking = true;
+        }
+    }, { passive: true });
 }
 
 // Magnetic button effect

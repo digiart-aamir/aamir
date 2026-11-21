@@ -358,7 +358,7 @@
         </a>
 
         <!-- Scripts -->
-        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script defer src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
         <script src="assets/js/main.js?v=4" defer></script>
 
         <!-- Service Worker Registration -->
