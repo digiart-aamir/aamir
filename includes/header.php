@@ -63,15 +63,15 @@
 
     <!-- Resource Hints -->
     <link rel="preload"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700;800;900&display=swap" as="style">
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" as="style">
     <link rel="preload" href="assets/css/style.css?v=4" as="style">
     <link rel="preload" href="assets/js/main.js?v=4" as="script">
     <link rel="preload" href="assets/img/hero%20section.png" as="image" fetchpriority="high">
     <link rel="preload" href="assets/img/navbar.png" as="image" fetchpriority="high">
 
-    <!-- Fonts (Single optimized async-ready declaration) -->
+    <!-- Fonts (Pruned high-performance font-display swap) -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700;800;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap"
         rel="stylesheet">
 
     <!-- Tailwind CSS -->
@@ -232,6 +232,47 @@
                     "YOLOv8", "Google MediaPipe", "Face Recognition", "Deep Learning", 
                     "ESP32", "Robotics & IoT", "Python Programming", "Full-Stack Web Development", 
                     "PHP & MySQL", "Tailwind CSS", "Kaggle Open Datasets", "STEAM & AI Education"
+                ],
+                "hasCredential": [
+                    {
+                        "@type": "EducationalOccupationalCredential",
+                        "name": "Huawei Certified ICT Academy Trainer (5G, AI & Cloud Infrastructure)",
+                        "credentialCategory": "Enterprise Professional Certification",
+                        "recognizedBy": {
+                            "@type": "Organization",
+                            "name": "Huawei Technologies Co., Ltd. & Huawei ICT Academy"
+                        }
+                    },
+                    {
+                        "@type": "EducationalOccupationalCredential",
+                        "name": "AI Agent Developer Specialization",
+                        "credentialCategory": "Specialization Certificate",
+                        "recognizedBy": {
+                            "@type": "Organization",
+                            "name": "DeepLearning.AI & Coursera"
+                        },
+                        "url": "https://coursera.org/verify/specialization/B68RANK2Y5XG"
+                    },
+                    {
+                        "@type": "EducationalOccupationalCredential",
+                        "name": "IBM Machine Learning Professional Certificate",
+                        "credentialCategory": "Professional Certificate",
+                        "recognizedBy": {
+                            "@type": "Organization",
+                            "name": "IBM"
+                        },
+                        "url": "https://coursera.org/verify/professional-cert/NHKMJ8SLWZ3M"
+                    },
+                    {
+                        "@type": "EducationalOccupationalCredential",
+                        "name": "Google Data Analytics Professional Certificate",
+                        "credentialCategory": "Professional Certificate",
+                        "recognizedBy": {
+                            "@type": "Organization",
+                            "name": "Google"
+                        },
+                        "url": "https://coursera.org/verify/professional-cert/8XK98VFWSF5H"
+                    }
                 ]
             },
             {
@@ -299,6 +340,87 @@
                         }
                     ]
                 }
+            },
+            {
+                "@type": "ItemList",
+                "@id": "https://aamir.asbots.com/portfolio/#projects",
+                "name": "Flagship Engineering & AI Projects",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "item": {
+                            "@type": "SoftwareApplication",
+                            "name": "AI-Powered Classroom Attendance System",
+                            "applicationCategory": "Computer Vision",
+                            "operatingSystem": "Cross-platform",
+                            "description": "Biometric face recognition and person detection system utilizing Ultralytics YOLOv8 and Google MediaPipe Face Mesh with 99.4% classification accuracy."
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "item": {
+                            "@type": "SoftwareApplication",
+                            "name": "SUI Gas SNGPL Monitoring & Automation Dashboards",
+                            "applicationCategory": "Industrial Automation",
+                            "operatingSystem": "Web",
+                            "description": "Enterprise SCADA pressure and volumetric telemetry monitoring system with automated anomaly detection and stakeholder alerts."
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "item": {
+                            "@type": "SoftwareApplication",
+                            "name": "ESP32 Waiter-Less Hotel Restaurant System",
+                            "applicationCategory": "Robotics & IoT",
+                            "operatingSystem": "Embedded",
+                            "description": "Autonomous multi-node restaurant automation utilizing ESP-NOW peer-to-peer mesh protocol and robotic food delivery."
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 4,
+                        "item": {
+                            "@type": "SoftwareApplication",
+                            "name": "AI Dual Axis Autonomous Solar Tracker",
+                            "applicationCategory": "Clean Energy IoT",
+                            "operatingSystem": "Embedded",
+                            "description": "Computer vision and transducer driven solar tracking system maximizing energy harvest with autonomous sun trajectory alignment."
+                        }
+                    }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "@id": "https://aamir.asbots.com/portfolio/#faq",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "What AI and Computer Vision services does Engr. Aamir Jamil provide in Islamabad?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Engr. Aamir Jamil specializes in custom computer vision architectures using Ultralytics YOLOv8 and Google MediaPipe for real-time facial recognition, biometric attendance systems, edge IoT automation with ESP32 microcontrollers, and full-stack web platforms."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Can I hire Engr. Aamir Jamil for AI and programming workshops or training in Islamabad?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Engr. Aamir Jamil is a certified Huawei ICT Academy Trainer and provides hands-on corporate and academic workshops in Python, Machine Learning, Deep Learning, Edge Robotics, and STEAM education across Islamabad and Rawalpindi."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Where is Engr. Aamir Jamil based and does he take remote international projects?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Engr. Aamir Jamil is based in Islamabad, Pakistan, and accepts both local in-person projects/training in Islamabad/Rawalpindi as well as remote international consulting and software development worldwide."
+                        }
+                    }
+                ]
             }
         ]
     }

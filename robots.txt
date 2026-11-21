@@ -3,9 +3,13 @@
 
 User-agent: *
 Allow: /
+Allow: /cv.php
+Allow: /assets/
 Allow: /assets/css/
 Allow: /assets/js/
 Allow: /assets/img/
+Allow: /assets/huawei%20ICT%20academy/
+Allow: /assets/coursera%20specializations/
 
 # Block system folders and dynamic JSON data to prioritize crawl budget
 Disallow: /includes/

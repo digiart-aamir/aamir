@@ -1,34 +1,35 @@
 // Portfolio Service Worker
-// Optimized for SEO and Performance
+// Optimized for SEO and Ultra-Fast PWA Performance
 
-const CACHE_NAME = 'portfolio-v6';
-const STATIC_CACHE = 'portfolio-static-v6';
-const DYNAMIC_CACHE = 'portfolio-dynamic-v6';
+const CACHE_NAME = 'portfolio-v7';
+const STATIC_CACHE = 'portfolio-static-v7';
+const DYNAMIC_CACHE = 'portfolio-dynamic-v7';
 
 // Files to cache immediately
 const STATIC_ASSETS = [
     './',
     'index.php',
+    'cv.php',
     'assets/css/style.css',
     'assets/js/main.js',
     'assets/img/navbar.png',
     'assets/img/my-profile-img.png',
+    'assets/img/hero%20section.png',
     'assets/img/portfolio/ml-1.png',
-    'assets/img/portfolio/ai-attendance-system.png',
+    'assets/img/portfolio/ai-attendance-system.jpg',
     'assets/img/portfolio/data-1.png',
-    'assets/img/portfolio/web-1.png',
+    'assets/img/portfolio/web-1.jpg',
     'assets/img/portfolio/asbots-platform.png',
-    'assets/img/portfolio/graphics-1.png',
+    'assets/img/portfolio/graphics-1.jpg',
     'assets/img/portfolio/certifai-showcase.png',
     'assets/img/portfolio/ml-2.png',
     'assets/img/portfolio/ml-3.png',
-    'assets/img/portfolio/iot-hotel-system.png',
-    'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap',
-    'https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&display=swap',
+    'assets/img/portfolio/iot-hotel-system.jpg',
+    'assets/img/portfolio/solar-harvesting.jpg',
+    'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap',
     'https://unpkg.com/aos@2.3.1/dist/aos.css',
     'https://unpkg.com/aos@2.3.1/dist/aos.js',
-    'https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js',
-    'https://cdn.tailwindcss.com'
+    'https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js'
 ];
 
 // Install event - cache static assets

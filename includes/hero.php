@@ -31,6 +31,7 @@
                                 class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-gradient">
                                 Engr. Aamir Jamil
                             </span>
+                            <span class="sr-only"> — Leading AI Expert, Developer &amp; Trainer in Islamabad</span>
                         </h1>
                         <div class="text-xl sm:text-2xl lg:text-3xl font-semibold text-gray-700 dark:text-gray-300">
                             <span id="typed-text"></span>

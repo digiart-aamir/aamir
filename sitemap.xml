@@ -3,87 +3,155 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-    <!-- Main Portfolio Page -->
+    <!-- 01: Main Portfolio Page -->
     <url>
         <loc>https://aamir.asbots.com/portfolio/</loc>
-        <lastmod>2026-06-10T10:11:00+05:00</lastmod>
+        <lastmod>2026-11-21T18:25:00+05:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         
-        <!-- Profile Image -->
+        <!-- Profile Identity Image -->
         <image:image>
             <image:loc>https://aamir.asbots.com/portfolio/assets/img/my-profile-img.png</image:loc>
-            <image:title>Engr. Aamir Jamil - Computer System Engineer</image:title>
-            <image:caption>Professional profile photo of Engr. Aamir Jamil, Computer System Engineer specializing in AI, Web Development, and STEAM/IoT/AI Education.</image:caption>
-        </image:image>
-        
-        <!-- Portfolio Projects Images -->
-        <image:image>
-            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/ml-1.png</image:loc>
-            <image:title>Laptop Price Prediction Project</image:title>
-            <image:caption>Machine Learning project predicting laptop prices using regression algorithms.</image:caption>
-        </image:image>
-        
-        <image:image>
-            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/data-1.png</image:loc>
-            <image:title>WhatsApp Chat Analysis Project</image:title>
-            <image:caption>Data analysis project extracting communication trends and chat insights.</image:caption>
-        </image:image>
-        
-        <image:image>
-            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/web-1.png</image:loc>
-            <image:title>Personal Portfolio Website</image:title>
-            <image:caption>Modern responsive portfolio website built with cutting-edge web design.</image:caption>
-        </image:image>
-        
-        <image:image>
-            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/asbots-platform.png</image:loc>
-            <image:title>ASBots — Artificial Systems &amp; Robotics Web Platform</image:title>
-            <image:caption>Enterprise web portal for robotics automation, Google OAuth, and AI orchestration.</image:caption>
-        </image:image>
-        
-        <image:image>
-            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/graphics-1.png</image:loc>
-            <image:title>Graphics Design Portfolio</image:title>
-            <image:caption>Creative showcase of UI/UX layouts, branding identity, and illustrations.</image:caption>
-        </image:image>
-        
-        <image:image>
-            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/certifai-showcase.png</image:loc>
-            <image:title>CertifAI — Design System &amp; SVG Asset Showcase</image:title>
-            <image:caption>Vector design system showcase featuring SMIL animated circuit shields, app squircles, splash prototypes, and 14 gradient themes.</image:caption>
-        </image:image>
-        
-        <image:image>
-            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/ml-2.png</image:loc>
-            <image:title>Handwritten Digit Recognition</image:title>
-            <image:caption>Deep learning project using Convolutional Neural Networks (CNN).</image:caption>
-        </image:image>
-        
-        <image:image>
-            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/ml-3.png</image:loc>
-            <image:title>Email Spam Detector</image:title>
-            <image:caption>NLP machine learning system for email spam classification.</image:caption>
+            <image:title>Engr. Aamir Jamil - AI Expert &amp; Computer System Engineer</image:title>
+            <image:caption>Professional profile photo of Engr. Aamir Jamil, leading AI Developer, Computer Vision Specialist, and Huawei Certified Trainer in Islamabad, Pakistan.</image:caption>
         </image:image>
 
         <image:image>
-            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/iot-hotel-system.png</image:loc>
-            <image:title>ESP32 Waiter-Less Hotel System</image:title>
-            <image:caption>Autonomous multi-node restaurant automation utilizing ESP-NOW mesh and delivery robot.</image:caption>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/img/hero%20section.png</image:loc>
+            <image:title>Engr. Aamir Jamil - Hero Showcase Avatar</image:title>
+            <image:caption>Engineering avatar of Engr. Aamir Jamil specializing in YOLOv8, MediaPipe, Robotics, and Full-Stack Architecture.</image:caption>
         </image:image>
-
+        
+        <!-- Flagship Portfolio Projects Images -->
         <image:image>
-            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/solar-harvesting.png</image:loc>
-            <image:title>AI Intelligent Dual Axis Solar Tracker</image:title>
-            <image:caption>Computer vision-driven autonomous dual axis solar harvesting tracker.</image:caption>
-        </image:image>
-
-        <image:image>
-            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/ai-attendance-system.png</image:loc>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/ai-attendance-system.jpg</image:loc>
             <image:title>AI-Powered Classroom Attendance System (YOLOv8 &amp; Google MediaPipe)</image:title>
             <image:caption>Automated biometric attendance tracking system using computer vision, YOLOv8 multi-face detection, and MediaPipe facial mesh landmarks by Engr. Aamir Jamil.</image:caption>
         </image:image>
-        
+
+        <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/data-1.png</image:loc>
+            <image:title>SUI Gas SNGPL Monitoring &amp; Automation Dashboards</image:title>
+            <image:caption>Industrial gas telemetry pressure and volumetric monitoring system with automated stakeholder reporting by Engr. Aamir Jamil.</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/iot-hotel-system.jpg</image:loc>
+            <image:title>ESP32 Waiter-Less Hotel Automation System</image:title>
+            <image:caption>Autonomous multi-node restaurant automation utilizing ESP-NOW wireless mesh protocol and robotic food delivery by Engr. Aamir Jamil.</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/solar-harvesting.jpg</image:loc>
+            <image:title>AI Intelligent Dual Axis Solar Harvesting Tracker</image:title>
+            <image:caption>Computer vision-driven autonomous dual axis solar harvesting tracker maximizing clean energy efficiency.</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/ml-1.png</image:loc>
+            <image:title>Laptop Price Prediction Machine Learning Model</image:title>
+            <image:caption>Regression machine learning algorithm analyzing computer specifications to predict market valuations.</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/web-1.jpg</image:loc>
+            <image:title>Personal Portfolio &amp; Developer Hub Website</image:title>
+            <image:caption>High-performance responsive personal engineering portfolio built with PHP, Tailwind CSS, Alpine.js, and PWA capabilities.</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/graphics-1.jpg</image:loc>
+            <image:title>Brand Identity &amp; UI/UX Graphic Design Portfolio</image:title>
+            <image:caption>Creative showcase of user experience layouts, modern branding identity, vector systems, and design packages.</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/certifai-showcase.png</image:loc>
+            <image:title>CertifAI — Design System &amp; SVG Asset Architecture</image:title>
+            <image:caption>Vector design system showcase featuring SMIL animated circuit shields, app squircles, splash prototypes, and 14 gradient themes.</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/ml-2.png</image:loc>
+            <image:title>Medical Insurance Cost Prediction Model</image:title>
+            <image:caption>Predictive analytics machine learning model evaluating actuarial demographic data and health risk metrics.</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/img/portfolio/ml-3.png</image:loc>
+            <image:title>Customer Churn Behavioral Analytics System</image:title>
+            <image:caption>Supervised classification model identifying churn indicators across enterprise subscription services.</image:caption>
+        </image:image>
+
+        <!-- Official Huawei ICT Academy Certifications Images -->
+        <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/huawei%20ICT%20academy/5G%20Basics_%20What%20it's%20all%20about.jpg</image:loc>
+            <image:title>Huawei HCIA 5G Basics Certification</image:title>
+            <image:caption>Official Huawei ICT Academy certification in 5G New Radio, high-band millimeter spectrum, and enterprise vertical use cases.</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/huawei%20ICT%20academy/5G%20Network%20Architecture%20and%20Key%20Technologies.jpg</image:loc>
+            <image:title>Huawei HCIA 5G Network Architecture Certification</image:title>
+            <image:caption>Official Huawei ICT Academy certification in Cloud RAN, network slicing, SBA architecture, and NFV virtualization.</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/huawei%20ICT%20academy/Overview%20of%20AI.jpg</image:loc>
+            <image:title>Huawei HCIA Artificial Intelligence Overview Certification</image:title>
+            <image:caption>Official Huawei ICT Academy certification in machine learning pipelines, deep neural networks, and model deployment.</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/huawei%20ICT%20academy/Search%20and%20AI.jpg</image:loc>
+            <image:title>Huawei HCIA Heuristic Search &amp; Intelligent Decision AI Certification</image:title>
+            <image:caption>Official Huawei ICT Academy certification in state-space heuristic search, A* algorithms, and game-tree optimization.</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/huawei%20ICT%20academy/Algorithm%20and%20Program%20Design.jpg</image:loc>
+            <image:title>Huawei HCIA Algorithm and Program Design Certification</image:title>
+            <image:caption>Official Huawei ICT Academy certification in dynamic programming, asymptotic complexity analysis, and scalable algorithms.</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/huawei%20ICT%20academy/Development%20and%20Basic%20Concepts%20of%20Cloud%20Computing.jpg</image:loc>
+            <image:title>Huawei HCIA Cloud Computing Concepts &amp; Virtualization Certification</image:title>
+            <image:caption>Official Huawei ICT Academy certification in hardware hypervisor virtualization, multi-tenant clusters, and cloud storage.</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/huawei%20ICT%20academy/Data%20Management%20and%20Analytics.jpg</image:loc>
+            <image:title>Huawei HCIA Data Management and Analytics Certification</image:title>
+            <image:caption>Official Huawei ICT Academy certification in enterprise ETL data pipelines, data warehousing, and business intelligence.</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/huawei%20ICT%20academy/Overview%20of%20IoT%20Technologies.jpg</image:loc>
+            <image:title>Huawei HCIA Internet of Things (IoT) Technologies Certification</image:title>
+            <image:caption>Official Huawei ICT Academy certification in LPWAN, NB-IoT protocols, edge transducers, and microcontroller telemetry.</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/huawei%20ICT%20academy/Computer%20Network.jpg</image:loc>
+            <image:title>Huawei HCIA Enterprise Computer Networks Certification</image:title>
+            <image:caption>Official Huawei ICT Academy certification in OSI/TCP-IP reference architecture, VLAN segmentation, and enterprise routing protocols.</image:caption>
+        </image:image>
+    </url>
+
+    <!-- 02: Executive Curriculum Vitae (ATS-Standard 2-Page CV) -->
+    <url>
+        <loc>https://aamir.asbots.com/portfolio/cv.php</loc>
+        <lastmod>2026-11-21T18:25:00+05:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+
+        <image:image>
+            <image:loc>https://aamir.asbots.com/portfolio/assets/img/my-profile-img.png</image:loc>
+            <image:title>Engr. Aamir Jamil Executive CV Profile Photo</image:title>
+            <image:caption>Executive Curriculum Vitae photo of Engr. Aamir Jamil, Computer System Engineer &amp; AI Trainer in Islamabad.</image:caption>
+        </image:image>
     </url>
 
 </urlset>

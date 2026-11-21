@@ -12,16 +12,59 @@ $metaDescription = "Curriculum Vitae of Engr. Aamir Jamil — Computer System En
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= htmlspecialchars($pageTitle) ?></title>
 
-    <!-- SEO Meta Tags -->
+    <!-- SEO & Social Meta Tags -->
     <meta name="description" content="<?= htmlspecialchars($metaDescription) ?>">
+    <meta name="keywords" content="Engr Aamir Jamil CV, AI Engineer resume, Computer System Engineer CV, AI Trainer Islamabad resume, Robotics Engineer CV Pakistan, ATS friendly AI resume">
     <meta name="author" content="Engr. Aamir Jamil">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://aamir.asbots.com/portfolio/cv.php">
 
-    <!-- Preconnect Google Fonts -->
+    <!-- Open Graph (Facebook, LinkedIn, Discord) -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Engr. Aamir Jamil | Executive Curriculum Vitae (CV)">
+    <meta property="og:description" content="Executive CV of Engr. Aamir Jamil — Computer System Engineer, AI Solutions Architect, and STEAM/IoT Educator in Islamabad.">
+    <meta property="og:url" content="https://aamir.asbots.com/portfolio/cv.php">
+    <meta property="og:image" content="https://aamir.asbots.com/portfolio/assets/img/my-profile-img.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Engr. Aamir Jamil | Executive Curriculum Vitae (CV)">
+    <meta name="twitter:description" content="Executive CV of Engr. Aamir Jamil — Computer System Engineer, AI Solutions Architect, and STEAM/IoT Educator in Islamabad.">
+    <meta name="twitter:image" content="https://aamir.asbots.com/portfolio/assets/img/my-profile-img.png">
+
+    <!-- Preconnect Google Fonts (Strict 2 Origins) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Space+Grotesk:wght@600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Schema.org JSON-LD ProfilePage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "name": "Engr. Aamir Jamil Executive Curriculum Vitae",
+        "url": "https://aamir.asbots.com/portfolio/cv.php",
+        "description": "Executive Curriculum Vitae of Engr. Aamir Jamil — AI Engineer, Solutions Architect, and Computer Trainer in Islamabad, Pakistan.",
+        "mainEntity": {
+            "@type": "Person",
+            "name": "Engr. Aamir Jamil",
+            "jobTitle": "Computer System Engineer & AI Solutions Architect",
+            "email": "digiart.aamir@gmail.com",
+            "telephone": "+92 341 4579704",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Islamabad",
+                "addressCountry": "PK"
+            },
+            "sameAs": [
+                "https://www.linkedin.com/in/engr-aamir-jamil-460b20262/",
+                "https://github.com/digiart-aamir",
+                "https://www.kaggle.com/engraamirjamil",
+                "https://asbots.com"
+            ]
+        }
+    }
+    </script>
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>

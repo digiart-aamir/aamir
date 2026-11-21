@@ -21,9 +21,9 @@
 
             <!-- Loading Text -->
             <div class="space-y-4">
-                <h1 class="text-2xl font-bold text-white font-mono">
+                <div class="text-2xl font-bold text-white font-mono">
                     Aamir Jamil
-                </h1>
+                </div>
                 <div class="flex items-center justify-center space-x-2">
                     <div class="w-2 h-2 bg-indigo-500 rounded-full animate-pulse"></div>
                     <div class="w-2 h-2 bg-indigo-500 rounded-full animate-pulse animation-delay-200"></div>
